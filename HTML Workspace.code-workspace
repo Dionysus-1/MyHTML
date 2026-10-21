@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "../HTML"
+		},
+		{
+			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MyHTML"
+	}
 }

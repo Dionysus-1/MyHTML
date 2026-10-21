@@ -10,50 +10,114 @@
     nav ul { ... }
     nav a { ... }
 
-
-
-    body: 
-    Schriftart Arial, Hintergrundfarbe #fafafa, Schriftfarbe #333
-
-    header: 
-    Dunkler Hintergrund (#2c3e50), Innenabstand (padding) oben/unten 12px, links/rechts 20px
-
-    nav ul: 
-    Keine Aufzählungszeichen (list-style), die Listeneinträge sollen nebeneinander stehen (display: flex, gap)
-
-    nav a: 
-    Links sollen weiß und ohne Unterstreichung dargestellt werden
-
-    h1: 
-    Schriftart Georgia, Farbe #2c3e50, Größe 28px, mit einem farbigen unteren Rahmen (border-bottom)
-
-    h2: 
-    Schriftart Georgia, Farbe #2980b9, Größe 20px
-
-    p: 
-    Zeilenabstand 1.7, Schriftgröße 14px
-
-    blockquote: 
-    Linker farbiger Rahmen, Hintergrundfarbe, Innenabstand, kursive Schrift
-
-    table: 
-    Volle Breite (width: 100%), Rahmenlinien zusammenführen (border-collapse: collapse)
-
-    th: 
-    Blauer Hintergrund, weiße Schrift, Innenabstand
-
-    td: 
-    Innenabstand, untere Rahmenlinie
-
-    footer: 
-    Dunkler Hintergrund, helle Schrift, zentrierter Text, kleiner Innenabstand
-
-
-    Bonus: Wer früher fertig ist
-    Füge dem main-Element einen maximalen Breite (max-width: 800px) und automatische 
-    seitliche Abstände (margin: 0 auto) hinzu, damit der Inhalt zentriert bleibt.
-
-    Gestalte gerade Tabellenzeilen (tr) mit einer leicht anderen Hintergrundfarbe 
-    (Tipp: das geht auch mit einem Elementselektor, aber schau dir :nth-child(even) an).
-
 */
+
+ /* body: 
+    Schriftart Arial, Hintergrundfarbe #fafafa, Schriftfarbe #333 */
+body {
+    font-family:Arial;
+    background-color:#fafafa;
+    color: #333; 
+}
+
+/*  header: 
+    Dunkler Hintergrund (#2c3e50), Innenabstand (padding) oben/unten 12px, links/rechts 20px */
+header {
+    background-color: #2c3e50;
+    padding: px 20px;
+}
+
+/*  nav ul: 
+    Keine Aufzählungszeichen (list-style), die Listeneinträge sollen nebeneinander stehen (display: flex, gap) */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+  /*  nav a: 
+    Links sollen weiß und ohne Unterstreichung dargestellt werden */
+
+nav a{
+    color:white;
+    text-decoration: none;
+}
+
+/*  h1: 
+    Schriftart Georgia, Farbe #2c3e50, Größe 28px, mit einem farbigen unteren Rahmen (border-bottom) */
+h1{
+    font-family: Georgia;
+    color: #2c3e50;
+    font-size: 28px;
+    border-bottom: #2980b9 2px solid;
+}
+
+/*  h2: 
+    Schriftart Georgia, Farbe #2980b9, Größe 20px */
+h2{
+    font-family: Georgia;
+    color: #2980b9;
+    font-size: 20px;
+}
+
+/*  p: 
+    Zeilenabstand 1.7, Schriftgröße 14px*/
+p{
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/*  blockquote: 
+    Linker farbiger Rahmen, Hintergrundfarbe, Innenabstand, kursive Schrift */
+blockquote{
+    border-left: 4px solid #2980b9;
+    background-color: #ecf0f1;
+    padding: 10px;
+    font-style: italic;
+}
+
+/*  table: 
+    Volle Breite (width: 100%), Rahmenlinien zusammenführen (border-collapse: collapse) */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*  th: 
+    Blauer Hintergrund, weiße Schrift, Innenabstand */
+th{
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+}
+
+/*  td: 
+    Innenabstand, untere Rahmenlinie */
+td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/*  footer: 
+    Dunkler Hintergrund, helle Schrift, zentrierter Text, kleiner Innenabstand */
+footer{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*  Bonus: Wer früher fertig ist
+    Füge dem main-Element einen maximalen Breite (max-width: 800px) und automatische 
+    seitliche Abstände (margin: 0 auto) hinzu, damit der Inhalt zentriert bleibt. */
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*  Gestalte gerade Tabellenzeilen (tr) mit einer leicht anderen Hintergrundfarbe 
+    (Tipp: das geht auch mit einem Elementselektor, aber schau dir :nth-child(even) an). */
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}

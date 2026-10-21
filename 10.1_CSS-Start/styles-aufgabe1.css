@@ -25,4 +25,35 @@
 
     f)
     Die Listeneinträge (li) sollen eine andere Farbe bekommen.
+
+
+    
 */
+
+h1 {
+    color: #090156; /* Beispiel für eine andere Farbe */
+    font-size: 32px;
+}
+
+h2 {
+    color: #1d00bd; /* Beispiel für eine andere Farbe */
+    font-size: 22px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #FF5733; /* Beispiel für eine andere Farbe */
+    text-decoration: none;
+}
+
+li {
+    color: #3357FF; /* Beispiel für eine andere Farbe */
+}
