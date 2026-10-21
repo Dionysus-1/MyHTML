@@ -1,0 +1,58 @@
+/* 
+    Media Queries - kurze Erklärung
+*/
+
+.hintergrundfarbe {
+  background-color: blue;
+} /* Definition 1 */
+
+@media (/*bedingung, z.b.: */ min-width: 600px) {
+  /*  CSS, das ausgeführt wird, wenn die Bedingung
+        der @media query erfüllt ist. */
+
+  .hintergrundfarbe {
+    background-color: red;
+  } /* Definition 2 */
+}
+/*
+    Wenn die Browserbreite 600px überschreitet wird die Definition in
+    der media query aktiv.
+    Da die .klasse in der Reihenfolge (Definition 2) später in der Datei
+    erfolgt, überschreibt sie die erste (Definition 1).
+*/
+
+/*
+    --------------------------------------------------------------------
+*/
+
+/*  Aufgaben
+
+    a)
+    Erstellen Sie in der HTML-Datei einen Obercontainer <section> und drei
+    Untercontainer <article>.
+
+    b)
+    Vergeben Sie dem Obercontainer die Klasse .flexbox und definieren Sie
+    diese ebenfalls in CSS (mit display: flex;). 
+    Vergeben Sie ebenfalls drei Klassen für die Untercontainer (siehe c). 
+
+    c)
+    Die drei Untercontainer <article> sollen nun im desktop Bereich (Breite
+    über 600px) nebeneinander dargestellt und je eine Breite von 50%, 20% 
+    und 30% haben. 
+    Im mobile-Bereich (unter 600px Breite) soll die flexbox vertikal (hochkant)
+    ausgerichtet werden und alle <article> eine Breite von 100% haben.
+
+    d)
+    Die Definition oben, die als Beispiel dient und den Hintergrund wechselt
+    kommentieren Sie bitte aus wenn Sie fertig sind.
+    
+*/
+
+/*CSS, das ausgeführt wird, wenn die Breite des Screens unter 600px schrumpft.*/
+
+@media only screen and (min-width: 600px) {
+  .flexbox {
+    display: flex;
+  }
+}

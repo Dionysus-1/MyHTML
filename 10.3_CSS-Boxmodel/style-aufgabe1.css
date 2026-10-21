@@ -1,0 +1,51 @@
+/*
+
+    Aufgabenstellung:
+
+
+    * (Reset): 
+    Setze mit dem Universal-Selektor margin und padding auf 0 zurück und setze box-sizing: border-box für alle Elemente
+    */
+* {
+}
+
+/*
+
+    body: 
+    Schriftart Arial, Hintergrundfarbe #f0f0f0, Schriftfarbe #333
+    */
+body {
+}
+
+/*
+
+    header: 
+    Hintergrund #2c3e50, Textfarbe weiß, Innenabstand oben/unten 16px, links/rechts 24px
+    
+    h1: 
+    Schriftgröße 26px, kein Außenabstand nötig (warum eigentlich nicht?)
+    
+    main: 
+    Maximale Breite 760px, automatische seitliche Außenabstände (margin: 0 auto), Innenabstand 24px
+    
+    section: 
+    Hintergrund #ffffff, Rahmen 2px solid #2c3e50, Innenabstand 20px, unterer Außenabstand 20px, abgerundete Ecken 4px
+    
+    h2: 
+    Schriftgröße 20px, Farbe #2c3e50, unterer Außenabstand 8px, unterer Rahmen 3px solid #e67e22, Innenabstand unten 6px
+    
+    p: 
+    Zeilenabstand 1.7, unterer Außenabstand 12px
+    
+    .infobox: 
+    Rahmen 2px solid #2980b9, Innenabstand 16px, oberer Außenabstand 12px, Hintergrund #eaf3fb, abgerundete Ecken 4px
+    
+    .infobox p: 
+    Unterer Außenabstand auf 0 setzen (warum ist das nötig?)
+    
+    footer: 
+    Hintergrund #2c3e50, Textfarbe #aaa, Innenabstand 12px 24px, oberer Außenabstand 0, Schriftgröße 13px
+    
+
+
+*/

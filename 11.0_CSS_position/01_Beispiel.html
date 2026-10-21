@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .static {
+        position: static;
+        border: 3px solid black;
+      }
+      .relative {
+        position: relative;
+        left: 32px;
+        border: 3px solid red;
+      }
+
+      .relative-2 {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        border: 3px solid blue;
+      }
+
+      .absolute {
+        position: absolute;
+        bottom: 0px;
+        width: 200px;
+        height: 100px;
+        border: 3px solid green;
+      }
+      .sticky {
+        position: sticky;
+        top: 0px;
+        padding: 5px;
+        background-color: rgb(197, 125, 31);
+        border: 2px solid rgb(189, 35, 99);
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid green;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+    <p>Ausgangswert oder Default: position: static</p>
+    <p>
+      Die Eigenschaften left, right, top & bottom, sowie der z-index haben bei
+      einem Element mit position: static keinerlei Wirkung. Man spricht deshalb
+      auch von einem nicht positionierten Element.
+    </p>
+    <div class="static">div element mit position: static;</div>
+    <div class="relative">div element mit position: relative;</div>
+
+    <div class="relative-2">
+      div element mit position: relative;
+      <div class="absolute">div element mit position: absolute;</div>
+    </div>
+    <div class="sticky">Ich bin sticky!</div>
+    <div class="fixed">Dieses div element ist position: fixed;</div>
+
+    <!-- Blindtext für das Beispiel sticky -->
+    <h3>Platz zum Scrollen</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et labore
+      officiis beatae consequuntur quisquam! Vel possimus doloribus
+      reprehenderit voluptas, ut tempora ducimus perferendis, maiores magni sed
+      ad harum itaque quam.
+    </p>
+  </body>
+</html>

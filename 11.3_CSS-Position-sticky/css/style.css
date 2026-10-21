@@ -1,0 +1,42 @@
+.navigation {
+  background-color: cadetblue;
+  height: 35px;
+  text-align: center;
+}
+.navigation li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navigation a {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  padding: 8px 24px;
+  display: block;
+}
+
+.navigation a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  background-color: cadetblue;
+}
+
+.navigation a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: #ff6600;
+  text-decoration: none;
+}
+
+.navigation a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}

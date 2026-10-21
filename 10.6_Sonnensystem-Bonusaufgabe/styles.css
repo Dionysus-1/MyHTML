@@ -1,0 +1,44 @@
+/*  
+
+    Aufgabe:
+
+    1)
+    Fügen Sie den mini-reset * {} ein und einen body Grundsetup.
+
+    2)
+    Fügen Sie einen div Container im body ein, der den gesamten Inhalt umschließt.
+    Also direkt nach dem öffnenden <body>
+    und den schließenden div _vor_ dem schließenden </body>.
+
+    Weisen Sie dem div die class="wrapper" zu.
+
+    # css 
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    3)
+    Formatieren Sie den Inhalt, das Sie ein padding für die Planetenansicht rundrum einstellen, so das der Inhalt mehr Leerraum "zum Atmen" hat. Werte zwischen 16px - 40px.
+
+    4)
+    Erstellen Sie einen Abstand für jede Planetenbox nach unten.
+
+    Tipp 
+    Wenn man nur einen Wert für margin oder padding braucht:
+
+    margin-bottom: 50px;
+    padding-top: 24px;
+
+    margin-left / padding-right
+
+    5)
+    Fügen Sie für die Headlines einen Google Font ein (Siehe: Website_und_Bausteine/webfonts)
+
+    6)
+    Ersetzen Sie die image float Lösung mit einer flexbox, so das Sie z.B. 2 Boxen
+    nebeneinander haben.
+
+    7)
+    Experimentieren Sie mit den gelernten CSS Befehlen.
+*/

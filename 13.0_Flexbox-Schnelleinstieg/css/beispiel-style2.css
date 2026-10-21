@@ -1,0 +1,43 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* die Flexbox "Magic" */
+
+.flex {
+  display: flex;
+}
+
+.container-50 {
+  width: 50%;
+}
+
+.container-33 {
+  width: 33.3333%;
+}
+
+.container-25 {
+  width: 25%;
+}
+
+/* Farben und Abstände zur Verdeutlichung */
+.container-50,
+.container-33,
+.container-25 {
+  border: 1px solid black;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container-50 {
+  background-color: aqua;
+}
+.container-33 {
+  background-color: cadetblue;
+}
+.container-25 {
+  background-color: chocolate;
+}

@@ -1,0 +1,28 @@
+/*
+
+    Aufgabe:
+
+    Was sollst du bauen?
+    Erstelle eine Navigationsleiste mit den Punkten Home, Über uns und Kontakt.
+
+    Desktop (≥ 768px): Links nebeneinander, blauer Hintergrund
+    Mobil (< 768px): Links untereinander, grüner Hintergrund
+    Anforderungen
+    Nutze display: flex für das Desktop-Layout
+    Schalte mit @media (max-width: 767px) auf mobiles Layout um
+    Die Links sollen auf beiden Layouts gut lesbar sein
+*/
+
+/*  Ein Media Query schaut, wie breit das Browserfenster ist, und wendet dann andere CSS-Regeln an: */
+
+/* Gilt immer */
+nav {
+  background-color: blue;
+}
+
+/* Gilt nur wenn Breite < 768px */
+@media (max-width: 767px) {
+  nav {
+    background-color: green;
+  }
+}

@@ -1,0 +1,42 @@
+/* Support */
+section article {
+  border: 3px solid red;
+  padding: 16px;
+}
+/* -------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: antiquewhite;
+  color: black;
+}
+/* Flexbox + Container */
+.flexbox {
+  display: flex;
+  /* flex-direction: row; */
+  /* gap: 32px; */
+}
+.container-50 {
+  width: 50%;
+}
+.container-33 {
+  width: 33.3334%;
+}
+/* Navigation */
+.navigation {
+  padding: 8px;
+}
+.navigation a {
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+.navigation li {
+  list-style: none;
+}

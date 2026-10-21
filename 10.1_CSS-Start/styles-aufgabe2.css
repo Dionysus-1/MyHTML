@@ -1,0 +1,59 @@
+/*
+
+    Aufgabe:
+
+    Gestalten Sie die Reiseblog-Seite mit CSS. Verwenden Sie die folgenden Anweisungen, um die verschiedenen Elemente der Seite zu stylen.
+
+    Für nav greifen wir auf die Kombinatoren zu, heißt wir verketten eine
+    Style-Deklaration damit wir nicht alle ul oder a im Dokument ansprechen.
+
+    nav ul { ... }
+    nav a { ... }
+
+
+
+    body: 
+    Schriftart Arial, Hintergrundfarbe #fafafa, Schriftfarbe #333
+
+    header: 
+    Dunkler Hintergrund (#2c3e50), Innenabstand (padding) oben/unten 12px, links/rechts 20px
+
+    nav ul: 
+    Keine Aufzählungszeichen (list-style), die Listeneinträge sollen nebeneinander stehen (display: flex, gap)
+
+    nav a: 
+    Links sollen weiß und ohne Unterstreichung dargestellt werden
+
+    h1: 
+    Schriftart Georgia, Farbe #2c3e50, Größe 28px, mit einem farbigen unteren Rahmen (border-bottom)
+
+    h2: 
+    Schriftart Georgia, Farbe #2980b9, Größe 20px
+
+    p: 
+    Zeilenabstand 1.7, Schriftgröße 14px
+
+    blockquote: 
+    Linker farbiger Rahmen, Hintergrundfarbe, Innenabstand, kursive Schrift
+
+    table: 
+    Volle Breite (width: 100%), Rahmenlinien zusammenführen (border-collapse: collapse)
+
+    th: 
+    Blauer Hintergrund, weiße Schrift, Innenabstand
+
+    td: 
+    Innenabstand, untere Rahmenlinie
+
+    footer: 
+    Dunkler Hintergrund, helle Schrift, zentrierter Text, kleiner Innenabstand
+
+
+    Bonus: Wer früher fertig ist
+    Füge dem main-Element einen maximalen Breite (max-width: 800px) und automatische 
+    seitliche Abstände (margin: 0 auto) hinzu, damit der Inhalt zentriert bleibt.
+
+    Gestalte gerade Tabellenzeilen (tr) mit einer leicht anderen Hintergrundfarbe 
+    (Tipp: das geht auch mit einem Elementselektor, aber schau dir :nth-child(even) an).
+
+*/

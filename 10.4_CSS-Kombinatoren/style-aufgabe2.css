@@ -1,0 +1,38 @@
+/*
+
+    Aufgabenstellung
+
+    Verwende ausschließlich Nachfahren- und Kind-Kombinatoren:
+
+    nav > a: 
+    Alle Links, die direkte Kinder von nav sind — Farbe #ecf0f1, kein Unterstrich, rechter Außenabstand 18px
+    → Hier passt >, weil die Links direkt in <nav> stehen
+    
+    nav: 
+    Hintergrund #2c3e50, Innenabstand 10px 16px, abgerundete Ecken 4px
+
+    main > article: 
+    Nur direkte article-Kinder von main — Rahmen 2px solid #ddd, Innenabstand 16px, unterer Außenabstand 14px, abgerundete Ecken 4px
+    
+    main > article > h2: 
+    Schriftfarbe #2c3e50, Schriftgröße 17px, unterer Außenabstand 8px
+    
+    article p: 
+    Alle p-Nachfahren in article — Zeilenabstand 1.6, Schriftgröße 13px, Farbe #444, unterer Außenabstand 8px
+    
+    article a: 
+    Links innerhalb von Artikeln — Farbe #e74c3c, fette Schrift
+    → Hier passt Leerzeichen, weil der Link tief im <p> steckt
+    
+    aside: 
+    Hintergrund #f8f8f8, Rahmen 1px solid #ddd, Innenabstand 14px, abgerundete Ecken 4px
+    
+    aside h2: 
+    Schriftfarbe #888, Schriftgröße 15px
+    
+    aside a: 
+    Links in der Sidebar — Farbe #aaa, normale Schriftstärke
+    → Gleicher Link-Typ, aber andere Farbe als in article — das ist der Kern dieser Aufgabe!
+    
+
+*/

@@ -1,0 +1,19 @@
+.card {
+  background: #fff;
+  border-radius: 2px;
+  margin: 16px;
+  position: relative;
+}
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/*
+
+      <section>
+        <article class="container-50">
+          <div class="card card-3"><br /><br />Card<br /><br /><br /></div>
+        </article>
+      </section>
+
+*/

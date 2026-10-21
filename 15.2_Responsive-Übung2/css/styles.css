@@ -1,0 +1,56 @@
+/*  Aufgaben
+
+    Weiterführung / Ergänzung zur vorhergehenden Aufgabe.
+
+    Die zu erstellende Aufgabe soll wieder zwischen mobile und desktop
+    wechseln. Allerdings sollen Sie diesmal mit speziellen "Schaltern"
+    arbeiten.
+
+    
+    Beispiel:
+
+    <article class="mobile-100 desktop-33"> ... </article>
+
+    Der Artikel soll also in der Handy-Ansicht 100% Breite einnehmen,
+    in der Desktop-Ansicht aber nur 33%.
+
+    Ähnlich soll der umschließende Obercontainer mit der flexbox funktionieren.
+    
+    <section class="flexbox mobile-direction-column desktop-direction-row"> ... </>
+
+    Im Obercontainer haben wir 2 Schalter die die Flexbox zwischen horizontal
+    und hochkant umschalten, je nach dem ob wir in Handy-Moduus oder in der
+    Desktopansicht sind. 
+
+    a)
+    Erstellen Sie in der HTML-Datei einen Obercontainer <section> und drei
+    Untercontainer <article>.
+
+    b)
+    Vergeben Sie dem Obercontainer die Klasse .flexbox und definieren Sie
+    diese ebenfalls in CSS (mit display: flex;). 
+    Vergeben Sie ebenfalls drei Klassen für die Untercontainer (siehe c). 
+
+    c)
+    Die drei Untercontainer <article> sollen nun im desktop Bereich (Breite
+    über 600px) nebeneinander dargestellt und je eine Breite von 50%, 20% 
+    und 30% haben. 
+    Im mobile-Bereich (unter 600px Breite) soll die flexbox vertikal (hochkant)
+    ausgerichtet werden und alle <article> eine Breite von 100% haben.
+
+    d)
+    Die Definition oben, die als Beispiel dient und den Hintergrund wechselt
+    kommentieren Sie bitte aus wenn Sie fertig sind.
+
+    
+*/
+
+/*CSS, das ausgeführt wird, wenn die Breite des Screens unter 600px schrumpft.*/
+@media (max-width: 600px) {
+  .flexbox {
+    display: flex;
+  }
+  body {
+    background-color: blueviolet;
+  }
+}

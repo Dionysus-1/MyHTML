@@ -1,0 +1,51 @@
+/*
+
+    Aufgabenstellung
+
+    Gestalte alle Komponenten mit Klassenselektoren:
+
+    .btn: 
+    Grundstil für alle Buttons — Innenabstand 8px 18px, abgerundete Ecken 4px, fette Schrift, kein Rahmen (border: none), Zeiger-Cursor (cursor: pointer)
+    
+    .primaer: 
+    Blauer Hintergrund #2980b9, weiße Schrift
+    
+    .sekundaer: 
+    Weißer Hintergrund, blauer Text #2980b9, blauer Rahmen 2px solid #2980b9
+    
+    .gefahr: 
+    Roter Hintergrund #e74c3c, weiße Schrift
+    
+    .hinweis: 
+    Grundstil für alle Boxen — Innenabstand 10px 14px, abgerundete Ecken, linker Rahmen 4px solid, unterer Außenabstand 10px
+    
+    .info: 
+    Hintergrund #eaf3fb, Rahmenfarbe #2980b9, Textfarbe #1a5276
+    
+    .erfolg: 
+    Hintergrund #eafaf1, Rahmenfarbe #27ae60, Textfarbe #1e8449
+    
+    .warnung: 
+    Hintergrund #fef9e7, Rahmenfarbe #f39c12, Textfarbe #9a6b00
+    
+    .fehler: 
+    Hintergrund #fdf2f2, Rahmenfarbe #e74c3c, Textfarbe #a93226
+    
+    .badge: 
+    Grundstil — kleine runde Pille (border-radius: 20px), Innenabstand 3px 10px, kleine fette Schrift, display: inline-block
+    
+    .neu: 
+    Blauer Hintergrund #2980b9, weiße Schrift
+    
+    .beliebt: 
+    Grüner Hintergrund #27ae60, weiße Schrift
+    
+    .ausverkauft: 
+    Grauer Hintergrund #aaa, weiße Schrift
+    
+    Bonus
+    Erkläre in einem Satz: Warum ist es sinnvoll, .btn und .primaer als zwei separate Klassen zu schreiben, statt alles in eine Klasse zu packen?
+    Füge den Buttons beim Darüberfahren (:hover) eine leicht dunklere Farbe hinzu.
+
+
+*/

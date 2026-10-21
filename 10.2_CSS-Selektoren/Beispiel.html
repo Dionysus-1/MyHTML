@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beispiel</title>
+    <style>
+      /* Universal Selektor "Mini Reset" */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /*
+      * {
+        border: 1px solid red;
+      }
+*/
+      #intro {
+        background-color: #fff8e1;
+        border-left: 4px solid #f39c12;
+        padding: 10px 14px;
+      }
+
+      .karte {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 14px 16px;
+        margin-bottom: 12px;
+        background-color: #f9f9f9;
+      }
+
+      .wichtig {
+        border-color: #e74c3c;
+        background-color: #fdf2f2;
+      }
+
+      .wichtig h2 {
+        color: #c0392b;
+      }
+
+      .tipp {
+        border-color: #27ae60;
+        background-color: #f2faf5;
+      }
+
+      .tipp h2 {
+        color: #1e8449;
+      }
+
+      #autor {
+        font-style: italic;
+        font-size: 12px;
+        color: #888;
+      }
+      .wrapper {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 0 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Willkommen zu meinem Lernblog!</h1>
+      <h1>Mein Lernblog</h1>
+      <!-- 
+        Eine id hat gegenüber einer Klasse den Nachteil, das sie nur einmal verwendet werden darf. Außerdem wird eine id meistens für Sprungmarken
+        oder für Javascript benutzt und können nicht verschoben werden.
+
+        Eine Klasse hingegen kann beliebig oft verwendet werden und kann auch verschoben werden, da sie nur für die Gestaltung gedacht ist.
+    -->
+
+      <p id="intro">
+        Herzlich willkommen! Hier teile ich meine Lernerfahrungen.
+      </p>
+
+      <div class="karte">
+        <h2>Was sind Klassen?</h2>
+        <p>Klassen erlauben es, mehreren Elementen denselben Stil zu geben.</p>
+      </div>
+
+      <!--
+        Klassen können auch kombiniert werden. In diesem Fall hat die Karte sowohl die Klasse "karte" als auch die Klasse "wichtig". Dadurch bekommt sie die Stile von beiden Klassen.
+
+        Sich überschneidende Styles werden nach der Reihenfolge der Klassen in der Styledefinition angewendet. In diesem Fall wird die Karte zuerst die Stile von "karte" und dann die Stile von "wichtig" erhalten. Das bedeutet, dass die Stile von "wichtig" die Stile von "karte" überschreiben, wenn sie sich überschneiden.
+    -->
+      <div class="karte wichtig">
+        <h2>Wichtig!</h2>
+        <p>Eine ID darf auf einer Seite nur einmal verwendet werden.</p>
+      </div>
+
+      <div class="karte tipp">
+        <h2>Tipp</h2>
+        <p>Klassen können kombiniert werden, wie man oben sehen kann.</p>
+      </div>
+
+      <p id="autor">Geschrieben von: CSS-Lernende</p>
+      <p>Für den Universal Selektor bitte einmal den Style einkommentieren.</p>
+    </div>
+  </body>
+</html>

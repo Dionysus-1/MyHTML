@@ -1,0 +1,23 @@
+/*
+
+    Aufgabenstellung
+
+    body:
+    Schriftfamilie Arial, Helvetica, sans-serif, Zeilenhöhe 1.4, Textfarbe #000
+    
+    div > p: 
+    Nur der direkte Kind-Absatz in div — Farbe #ff6600, fette Schrift
+    
+    div p: 
+    Alle Absätze irgendwo in div (also auch die in section) — Hintergrundfarbe #eaf3fb, Innenabstand 6px 10px
+    
+    section > p: 
+    Nur direkte Kind-Absätze von section — Farbe #888
+    
+    div: 
+    Rahmen 2px solid #2980b9, Innenabstand 14px, unterer Außenabstand 14px, abgerundete Ecken 4px
+    
+
+    Tipp: div p trifft alle Absätze in div — auch die, die in der verschachtelten section stecken. Beobachte, welche Regel bei den Absätzen in <div><section><p> greift!
+
+*/

@@ -1,0 +1,17 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASIS */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 16px;
+  background-color: #f4f4f4;
+  color: #222;
+}

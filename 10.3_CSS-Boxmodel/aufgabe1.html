@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style-aufgabe1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Box Model</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Was ist das Box Model?</h2>
+        <p>
+          Jedes Element auf einer Webseite ist eine rechteckige Box. Das Box
+          Model beschreibt, wie Inhalt, Innenabstand, Rahmen und Außenabstand
+          zusammenspielen.
+        </p>
+
+        <div class="infobox">
+          <p>
+            Merke: Padding ist der Abstand <em>innerhalb</em>
+            des Rahmens, Margin ist der Abstand
+            <em>außerhalb</em>.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Breite und box-sizing</h2>
+        <p>
+          Mit <code>box-sizing: border-box</code> wird Padding und Border in die
+          angegebene Breite eingerechnet – das erleichtert das Layout erheblich.
+        </p>
+
+        <div class="infobox">
+          <p>
+            Ohne border-box: width + padding + border = tatsächliche Breite.<br />
+            Mit border-box: width = tatsächliche Breite.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>CSS Grundlagen – Box Model</p>
+    </footer>
+  </body>
+</html>

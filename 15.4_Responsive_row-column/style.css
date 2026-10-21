@@ -1,0 +1,50 @@
+/*
+    Aufgabe: Responsives Layout mit Flexbox & einem Breakpoint
+
+    Was sollen sie bauen?
+    Eine Seite mit Navigation, drei Inhaltskarten und Footer:
+
+    Mobil < 768px
+    Karten untereinander (flex-direction: column), Hamburger-Icon, Text zentriert
+
+    Desktop ≥ 768px
+    Karten nebeneinander (flex-direction: row), volle Nav, Text linksbündig
+
+    Anforderungen:
+
+    Mobile First: Basis-CSS für Mobil, @media (min-width: 768px) für Desktop
+    Die Karten wechseln von flex-direction: column auf row
+    Jede Karte bekommt auf Desktop flex: 1, damit sie gleichmäßig Platz füllt
+    Navigation: Mobil nur ☰-Icon, Desktop alle Links sichtbar
+
+    Der Kern des Layouts
+    Mit flex-direction steuern sie, ob Elemente untereinander oder nebeneinander erscheinen. 
+    Mit flex: 1 (funktioniert ähnlich wie 33%) teilen sich die Kinder den Platz gleichmäßig auf:
+
+    Beispiel:
+
+    Mobil: untereinander 
+    
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    Desktop: nebeneinander, gleich breit 
+    @media (min-width: 768px) {
+        .card-container {
+            flex-direction: row;
+        }
+
+        .card {
+            flex: 1;  jede Karte bekommt 1/3 
+        }
+    }
+*/
+
+/* ── Mobil (Basis) ── */
+
+/* ── Desktop ab 768px ── */
+@media (min-width: 768px) {
+}

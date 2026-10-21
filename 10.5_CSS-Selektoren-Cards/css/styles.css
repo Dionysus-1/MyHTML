@@ -1,0 +1,93 @@
+/* Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: white;
+  color: black;
+}
+
+/*
+    Aufgabe:
+
+    Erstellen Sie eine Adressenkarteikarte, hier: .card.
+    Alle Formatierungen sollen nur innerhalb .card gültig sein,
+    Sie werden also IMMER .card voranstellen bei den CSS-Styles.
+
+    .card h2 { ... } etc.
+
+    Die .card soll später einen Schlagschatten und einen Hovereffekt
+    haben, der code dafür ist unten schon eingefügt. Die transition: 0.3;
+    animiert das ganze.
+
+    Sie können eigenständig Klassen für alle Elemente vergeben die in der
+    .card liegen um sie anzusprechen.
+
+
+    1)
+    Erstellen Sie den HTML-Aufbau anhand der Aufgabe.png in der index.html.
+    Inhalte:
+
+    h2: Adresskartei
+    h3: Name der Person
+    p Nr.1: Berufsbezeichnung
+    p Nr.2: Adresse
+    p Nr.3: Telefon
+    p Nr.4: email
+
+
+
+    2)
+    Geben Sie der .card eine maximale Breite von 300px (max-width), eine 
+    Hintergrundfarbe #f0f0f0 und einen border-radius von 8px.
+    
+    3)
+    Geben Sie der H2 eine Fontgröße von 36px, und ein padding-left 8px sowie
+    ein padding nach oben von 16px.
+
+    4)
+    Geben Sie dem img eine Breite von 100% und eine Höhe "auto". Das Bild
+    sollte links/rechts von Kante zu Kante der .card reichen.
+
+    5)
+    Geben Sie der h3 eine Fontgröße von 24px und ein padding-left 8px sowie
+    ein padding nach oben von 16px.
+
+    6)
+    Geben Sie der p1 ein bold, Fontgröße 16px und ein padding-left 8px.
+
+    7)
+    Geben Sie der p2 eine Textfarbe von #232323 und eine Textgröße von 14px;
+    und ein padding-left 8px
+
+    8)
+    Geben Sie der p3 einen Unterstrich und ein padding-left 8px.
+
+    9)
+    P Nr4: Geben Sie dem Text die Farbe #343434 und ein padding-left 8px.
+
+    10)
+    Geben Sie unterhalb von p4 Platz nach unten. 16px. Fügen Sie dies in .card 
+    hinzu.
+
+    11)
+    Checken Sie, ob alles schick aussieht. Der Text sollte links zum Rand
+    überall 8px Abstand haben. Ggf fügen sie zwischen den einzelnen Elementen
+    noch Abstände ein damit es stimmiger aussieht.
+
+*/
+
+/* Dropshadow und Hover-Effekt */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

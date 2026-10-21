@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .display-block {
+        display: block;
+        background-color: lightblue;
+      }
+      .display-inline {
+        display: inline;
+        background-color: lightgreen;
+      }
+      .display-inline-block {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        background-color: lightcoral;
+      }
+      .box1 {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: coral;
+      }
+
+      .box2 {
+        display: inline;
+        width: 100px;
+        height: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    Ein span-tag mit display: block wird wie ein div-Element behandelt und nimmt
+    die gesamte Breite ein, während ein span-tag mit display: inline sich wie
+    ein normaler Text verhält und nur so viel Platz einnimmt, wie der Inhalt
+    benötigt. Ein span-tag mit display: inline-block verhält sich wie ein
+    Block-Element, aber es nimmt nur so viel Platz ein, wie der Inhalt benötigt,
+    und ermöglicht es, andere Elemente neben ihm zu platzieren.
+    <span class="display-block">Text A</span>
+    <br />
+    Ein span-tag mit display: inline ändert nichts, da span schon ein inline
+    Element ist.
+    <span class="display-inline">Text B</span>
+    <br />
+    Lorem ipsum dolor sit amet
+    <div class="box1">Block</div>
+    Lorem ipsum dolor sit amet
+    <div class="display-inline-block">Inline-Block</div>
+    Lorem, ipsum dolor sit amet
+    <div class="box2">Inline</div>
+
+    <p class="display-inline">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui
+      ipsa molestias corporis distinctio placeat, corrupti, quidem numquam eos
+      ratione nisi sit. Cumque culpa in pariatur blanditiis ullam recusandae
+      sequi.
+    </p>
+  </body>
+</html>
