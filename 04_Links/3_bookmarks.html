@@ -1,0 +1,90 @@
+<!-- 
+    Aufgabe: 
+
+    <a> + id
+      <section>
+
+    Erstellen Sie im <header> eine Liste <ul> mit drei Unterpunkten <li>. 
+    Innerhalb jedes Unterpunkts bitte einen Link <a> zu einer section id / bookmark. 
+
+    Links wie folgt:
+
+    <a href="#sprungmarke" > Bezeichnung des Links </ a >
+
+    Erstellen Sie im Footer einen Link mit Sprungmarke zum Seitenanfang.
+
+
+
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarks</title>
+    <style>
+      #section1 {
+        /* mit # -> id */
+        height: 100vh; /* Viewport Height */
+        background-color: rgb(154, 156, 158);
+        text-align: center;
+        padding-top: 50vh;
+      }
+      #section2 {
+        height: 100vh;
+        background-color: rgb(138, 138, 138);
+        text-align: center;
+        padding-top: 50vh;
+      }
+      #section3 {
+        height: 100vh;
+        background-color: rgb(121, 141, 158);
+        text-align: center;
+        padding-top: 50vh;
+      }
+    </style>
+  </head>
+  <body id="seitenanfang">
+    <header>
+      <h1>Navigation</h1>
+      <ul>
+        <li><a href="#section1">Bereich 1</a></li>
+        <li><a href="#section2">Bereich 2</a></li>
+        <li><a href="#section3">Bereich 3</a></li>
+      </ul>
+    </header>
+    <main>
+      <section id="section1"
+      >Bereich 1
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quod, quia, voluptates quae voluptatem voluptatibus
+          quibusdam quas quidem. Quisquam, quod, quia, voluptates quae
+          voluptatem voluptatibus quibusdam quas quidem.
+        </p>
+      </section>
+      <section id="section2">
+        Bereich 2
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quod, quia, voluptates quae voluptatem voluptatibus
+          quibusdam quas quidem. Quisquam, quod, quia, voluptates quae
+          voluptatem voluptatibus quibusdam quas quidem.
+        </p>
+      </section>
+      <section id="section3">
+        Bereich 3
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quod, quia, voluptates quae voluptatem voluptatibus
+          quibusdam quas quidem. Quisquam, quod, quia, voluptates quae
+          voluptatem voluptatibus quibusdam quas quidem.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a href="#seitenanfang">Zum Seitenanfang</a>
+    </footer>
+  </body>
+</html>

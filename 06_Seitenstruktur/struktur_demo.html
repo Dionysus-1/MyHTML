@@ -1,0 +1,89 @@
+<!-- 
+    Aufgabe: 
+
+    <header>, <main>, <footer>
+    <nav>, <article>, <section>, <aside>
+    <div>
+
+    Erstellen Sie ein html Dokument entsprechend dem Bild aufbau.png 
+    im Ordner. Die <article> im Bild stehen nur aus Platzgründen nebeneinander,
+    bei Ihnen sollten diese selbstverständlich untereinander im code stehen. ;-)
+    
+    Geben Sie dem Dokument einen Titel: "Struktur".
+
+    Fügen Sie im Inhaltsbereich (main) eine Überschrift mit: "Grundaufbau" ein.
+    Füllen Sie die container (article) mit Inhalten.
+
+    Fügen Sie im <header> ein Bild 64px x 64px ein.
+-->
+
+<!--
+    Dummy-Text
+
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+    At vero eos et accusam et justo duo dolores et ea rebum. 
+
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+-->
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Struktur</title>
+    <style>
+      header,
+      main,
+      footer,
+      nav,
+      section,
+      div {
+        border: 2px solid red;
+      }
+      article {
+        border: 4px dotted green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="64x64.jpg" />
+      </nav>
+    </header>
+    <main>
+      <h1>Grundaufbau</h1>
+      <section>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quis
+            iusto nam aliquid, dolores dolor, eveniet nemo saepe vitae, culpa
+            enim eum cupiditate corrupti non! Quae inventore nobis esse
+            perspiciatis.
+          </p>
+        </article>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quis
+            iusto nam aliquid, dolores dolor, eveniet nemo saepe vitae, culpa
+            enim eum cupiditate corrupti non! Quae inventore nobis esse
+            perspiciatis.
+          </p>
+        </article>
+        <article>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quis
+            iusto nam aliquid, dolores dolor, eveniet nemo saepe vitae, culpa
+            enim eum cupiditate corrupti non! Quae inventore nobis esse
+            perspiciatis.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>Footer</div>
+    </footer>
+  </body>
+</html>
