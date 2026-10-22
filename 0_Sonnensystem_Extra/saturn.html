@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="stars"></div>
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    <!-- 3. Das Skript, das die header.html fehlerfrei einfügt -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!--______________________   main ______________________-->
+    <main>
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+        <hr />
+
+        <!--************************* Saturn *************************-->
+        <section>
+          <!-- Saturn -->
+          <div class="baseline clearfix">
+            <h2>Saturn</h2>
+            <h3>
+              Der bunte Herr der Ringe besitzt weit über 100 bekannte Monde und
+              eine geringere Dichte als Wasser.
+            </h3>
+            <img src="images/saturn.jpg" alt="Der Planet Saturn" />
+            <p>
+              Saturn ist vor allem für sein spektakuläres, weithin sichtbares
+              Ringsystem berühmt, das aus Milliarden Eisbrocken, Staub und
+              Gesteinspartikeln besteht. Trotz seiner enormen Ausmaße besitzt
+              der Gasriese die geringste mittlere Dichte aller Planeten unseres
+              Systems. Sein größter Mond Titan ist der einzige Mond mit einer
+              dichten Stickstoffatmosphäre.
+            </p>
+          </div>
+          <blockquote>
+            Saturn besitzt das prachtvollste Ringsystem und mit Titan den
+            einzigen Mond im Sonnensystem, der eine dichte Gashülle besitzt.
+          </blockquote>
+          <hr />
+        </section>
+      </div>
+    </main>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>

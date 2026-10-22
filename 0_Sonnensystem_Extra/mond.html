@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="stars"></div>
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    <!-- 3. Das Skript, das die header.html fehlerfrei einfügt -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!--______________________   main ______________________-->
+    <main>
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+        <hr />
+
+        <!---------------------------------------------------------------------->
+        <!------------------------------- Der Mond -------------------------------->
+        <section>
+          <div class="baseline clearfix">
+            <h3>Mond</h3>
+            <img src="images/Mond.jpg" alt="Monde im Sonnensystem" />
+            <p>
+              Der Mond ist mit einem Durchmesser von 3.474 Kilometern der
+              fünftgrößte Mond des Sonnensystems und der einzige natürliche
+              Satellit der Erde. Bei einer durchschnittlichen Entfernung von
+              etwa 384.400 Kilometern benötigt er für eine Umkreisung rund 27,3
+              Tage.
+            </p>
+          </div>
+          <blockquote>
+            Erds natürlicher Begleiter<br />
+            Der Mond ist der einzige natürliche Satellit der Erde. Seine
+            markante Oberfläche, die von tiefen Kratern, Bergen und dunklen
+            Vulkanebenen (Maria) geprägt ist, macht ihn zu einem faszinierenden
+            Blickfang an unserem Nachthimmel und zum ständigen Begleiter unseres
+            Planeten.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!------------------------------- Monde -------------------------------->
+        <section>
+          <div class="baseline clearfix">
+            <h3>Monde</h3>
+            <img src="images/Monde.jpg" alt="Monde im Sonnensystem" />
+            <p>
+              Monde sind natürliche Satelliten, die Planeten umkreisen. Einige
+              Planeten besitzen viele Monde, etwa Jupiter und Saturn. Der
+              Erdmond beeinflusst unter anderem die Gezeiten auf der Erde.
+            </p>
+          </div>
+          <blockquote>
+            Viele Monde zeigen geologische Aktivität und liefern Hinweise auf
+            die Entstehung des Sonnensystems.
+          </blockquote>
+          <hr />
+        </section>
+      </div>
+    </main>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>

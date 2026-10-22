@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="stars"></div>
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    <!-- 3. Das Skript, das die header.html fehlerfrei einfügt -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!--______________________   main ______________________-->
+    <main>
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+        <hr />
+
+        <!--************************** Pluto ****************************-->
+        <section>
+          <!-- Pluto -->
+          <div class="baseline clearfix">
+            <h2>Pluto</h2>
+            <h3>
+              Ehemaliger neunter Planet, heute als Zwergplanet im Kuipergürtel
+              klassifiziert.
+            </h3>
+            <img src="images/pluto.jpg" alt="Der Zwergplanet Pluto" />
+            <p>
+              Pluto umkreist die Sonne am fernen Rand unseres Sonnensystems im
+              sogenannten Kuipergürtel. Die eisige Welt besitzt eine dünne
+              Atmosphäre aus Stickstoff und Methan sowie riesige Ebenen aus
+              gefrorenem Stickstoffeis, darunter die markante herzförmige Ebene
+              Tombaugh Regio. Gemeinsam mit seinem größten Mond Charon bildet er
+              fast ein Doppelplanetensystem.
+            </p>
+          </div>
+          <blockquote>
+            Pluto galt seit seiner Entdeckung 1930 als neunter Planet.
+            Im August 2006 stufte ihn die IAU offiziell zum Zwergplaneten herab,
+            da er seine Umlaufbahn nicht von anderen Objekten bereinigt hat.
+          </blockquote>
+          <hr />
+        </section>
+      </div>
+    </main>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>

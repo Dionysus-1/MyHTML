@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="seitenanfang">
+    <!-- blinkende Sterne -->
+    <div class="stars"></div>
+
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    <!-- Das Skript, das die header.html einfügt -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!--______________________   main ______________________-->
+    <main>
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+        <section>
+          <h1>Unser Sonnensystem</h1>
+          <blockquote>
+            „Das Unverständlichste am Universum ist im Grunde, dass wir es
+            verstehen.“
+            <br />- Albert Einstein
+          </blockquote>
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!-------------------------------- Sonne ------------------------------->
+        <section>
+          <!-- Sonne -->
+          <div class="baseline clearfix">
+            <h2>Sonne</h2>
+            <h3>
+              Das massereiche Zentrum und der einzige Stern unseres
+              Planetensystems.
+            </h3>
+            <img src="images/sonne.jpg" alt="Die glühende Sonne" />
+            <p>
+              Die Sonne ist das Herzstück unseres Planetensystems und macht über
+              99 % der gesamten Masse des Sonnensystems aus. Durch Kernfusion
+              wandelt sie in ihrem Inneren pro Sekunde Millionen Tonnen
+              Wasserstoff in Helium um und erzeugt dadurch das lebensnotwendige
+              Licht und die Wärme für alle Planeten.
+            </p>
+          </div>
+          <blockquote>
+            Die Sonne ist etwa 1,4 Millionen Kilometer groß – die Erde würde
+            mehr als eine Million Mal in sie hineinpassen.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!------------------------------- Planeten ----------------------------->
+        <section>
+          <!-- Merkur -->
+          <div class="baseline clearfix">
+            <h2>Merkur</h2>
+            <h3>
+              Als sonnennächster Planet besitzt Merkur keinerlei natürliche
+              Monde.
+            </h3>
+            <img src="images/merkur.jpg" alt="Der Planet Merkur" />
+            <p>
+              Merkur ist der sonnennächste Planet und zugleich der kleinste im
+              Sonnensystem. Da er praktisch keine nennenswerte Atmosphäre
+              besitzt, um Wärme zu speichern, herrschen extreme Bedingungen:
+              tagsüber klettert die Temperatur auf über 400 °C, während sie
+              nachts auf eisige -170 °C absinkt. Seine kraterübersäte Oberfläche
+              erinnert stark an den Erdmond.
+            </p>
+          </div>
+          <blockquote>
+            Merkur besitzt weder eine Atmosphäre noch Monde und benötigt nur 88
+            Tage für eine vollständige Sonnenumrundung.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--*************************** Venus ********************************-->
+        <section>
+          <!-- Venus -->
+          <div class="baseline clearfix">
+            <h2>Venus</h2>
+            <h3>
+              Die Venus ist neben Merkur der einzige Planet im Sonnensystem, der
+              keinen Mond hat.
+            </h3>
+            <img src="images/venus.jpg" alt="Der Planet Venus" />
+            <p>
+              Obwohl Venus weiter von der Sonne entfernt ist als Merkur, ist sie
+              der heißeste Planet im System. Schuld daran ist eine extrem dichte
+              Kohlendioxid-Atmosphäre mit Schwefelsäurewolken, die einen
+              extremen Treibhauseffekt erzeugt und die Oberfläche auf rund 470
+              °C bei ca. 93 Bar Bodendruck aufheizt. Wegen ihrer enormen
+              Helligkeit wird sie oft als Morgen- oder Abendstern bezeichnet.
+            </p>
+          </div>
+          <blockquote>
+            Die Venus rotiert rückwärts (im Uhrzeigersinn) und ein Tag auf ihr
+            dauert länger als ihr gesamtes Jahr.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--********************** Erde **************************-->
+        <section>
+          <!-- Erde -->
+          <div class="baseline clearfix">
+            <h2>Erde</h2>
+            <h3>
+              Unser Heimatplanet und die einzige bekannte Oase des Lebens im
+              Universum.
+            </h3>
+            <img src="images/erde.jpg" alt="Der Planet Erde" />
+            <p>
+              Unser Heimatplanet ist die einzige bekannte Welt mit flüssigem
+              Oberflächenwasser, einer schützenden
+              Sauerstoff-Stickstoff-Atmosphäre und nachgewiesenem Leben. Rund 71
+              Prozent ihrer Oberfläche sind von Ozeanen bedeckt. Der
+              vergleichsweise riesige Erdmond stabilisiert mit seiner
+              Gravitation verlässlich die Neigung der Erdachse und ermöglicht so
+              stabile Jahreszeiten.
+            </p>
+          </div>
+          <blockquote>
+            Der Erdmond ist im Verhältnis zur Größe seines Heimatplaneten
+            außergewöhnlich massereich und stabilisiert die lebenswichtige
+            Erdachse.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--********************** Mars ***********************-->
+        <section>
+          <!-- Mars -->
+          <div class="baseline clearfix">
+            <h2>Mars</h2>
+            <h3>
+              Der Mars besitzt zwei kleine Monde, Phobos und Deimos, bei denen
+              es sich vermutlich um eingefangene Asteroiden handelt.
+            </h3>
+            <img src="images/mars.jpg" alt="Der Planet Mars" />
+            <p>
+              Mars verdankt seinen Beinamen „Roter Planet“ dem feinen
+              Eisenoxidstaub auf seiner trockenen Oberfläche. Neben gewaltigen
+              Canyons beherbergt er mit Olympus Mons den höchsten bekannten
+              Schildvulkan im Sonnensystem. Seine beiden winzigen Begleiter
+              Phobos und Deimos wurden 1877 entdeckt und gelten als Überreste
+              vergangener Kollisionen oder eingefangene Gesteinsbrocken.
+            </p>
+          </div>
+          <blockquote>
+            Auf dem Mars existieren zwei kleine, unregelmäßige Monde: Phobos und
+            Deimos, die vermutlich eingefangene Asteroiden sind.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--*********************** Jupiter **************************-->
+        <section>
+          <!-- Jupiter -->
+          <div class="baseline clearfix">
+            <h2>Jupiter</h2>
+            <h3>
+              Jupiter ist ein gigantisches System mit über 90 Monden, von denen
+              Ganymed der größte Mond im Sonnensystem ist.
+            </h3>
+            <img src="images/jupiter.jpg" alt="Der Planet Jupiter" />
+            <p>
+              Als gigantischer Gasriese besitzt Jupiter mehr Masse als alle
+              anderen sieben Planeten zusammen. Sein auffälligstes Merkmal ist
+              der „Große Rote Fleck“, ein seit Jahrhunderten tobender
+              Wirbelsturm. Jupiter beherbergt unter anderem die vier großen
+              Galileischen Monde Io, Europa, Ganymed und Kallisto, unter deren
+              Eiskrusten teils flüssige Ozeane vermutet werden.
+            </p>
+          </div>
+          <blockquote>
+            Jupiter wirkt mit seiner enormen Schwerkraft wie ein kosmischer
+            Schutzschild, der Kometen ablenkt und so die inneren Planeten
+            schützt.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--************************* Saturn *************************-->
+        <section>
+          <!-- Saturn -->
+          <div class="baseline clearfix">
+            <h2>Saturn</h2>
+            <h3>
+              Der bunte Herr der Ringe besitzt weit über 100 bekannte Monde und
+              eine geringere Dichte als Wasser.
+            </h3>
+            <img src="images/saturn.jpg" alt="Der Planet Saturn" />
+            <p>
+              Saturn ist vor allem für sein spektakuläres, weithin sichtbares
+              Ringsystem berühmt, das aus Milliarden Eisbrocken, Staub und
+              Gesteinspartikeln besteht. Trotz seiner enormen Ausmaße besitzt
+              der Gasriese die geringste mittlere Dichte aller Planeten unseres
+              Systems. Sein größter Mond Titan ist der einzige Mond mit einer
+              dichten Stickstoffatmosphäre.
+            </p>
+          </div>
+          <blockquote>
+            Saturn besitzt das prachtvollste Ringsystem und mit Titan den
+            einzigen Mond im Sonnensystem, der eine dichte Gashülle besitzt.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--************************* Uranus **************************-->
+        <section>
+          <!-- Uranus -->
+          <div class="baseline clearfix">
+            <h2>Uranus</h2>
+            <h3>
+              Die bekannten Monde des Uranus sind nach Figuren von Shakespeare
+              und Pope benannt.
+            </h3>
+            <img src="images/uranus.jpg" alt="Der Planet Uranus" />
+            <p>
+              Uranus ist ein kalter Eisriese, dessen bläulich-türkise Färbung
+              durch Methangas in der oberen Atmosphäre hervorgerufen wird. Seine
+              größte Besonderheit ist die extreme Neigung der Rotationsachse um
+              fast 98 Grad: Er rollt förmlich wie eine Kugel seitlich auf seiner
+              Umlaufbahn um die Sonne.
+            </p>
+          </div>
+          <blockquote>
+            Aufgrund seiner extremen Achsenneigung dauern Tag und Nacht an den
+            Polen des Uranus jeweils 42 Jahre ununterbrochen an.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--************************* Neptun **************************-->
+        <section>
+          <!-- Neptun -->
+          <div class="baseline clearfix">
+            <h2>Neptun</h2>
+            <h3>
+              Neptun hat 16 bekannte Monde, von denen der eisige Triton
+              rückläufig um den Planeten kreist.
+            </h3>
+            <img src="images/neptun.jpg" alt="Der Planet Neptun" />
+            <p>
+              Neptun ist der äußerste der acht regulären Planeten. Der tiefblaue
+              Eisriese ist für extrem unwirtliche Wetterverhältnisse bekannt –
+              hier toben die stärksten gemessenen Stürme des Sonnensystems mit
+              Geschwindigkeiten von über 2.000 km/h. Für eine einzige Umrundung
+              der Sonne benötigt er rund 165 Erdjahre.
+            </p>
+          </div>
+          <blockquote>
+            Ein Jahr auf Neptun dauert fast 165 Erdjahre; seit seiner Entdeckung
+            im Jahr 1846 hat er die Sonne erst ein einziges Mal vollständig
+            umrundet.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!--************************** Pluto ****************************-->
+        <section>
+          <!-- Pluto -->
+          <div class="baseline clearfix">
+            <h2>Pluto</h2>
+            <h3>
+              Ehemaliger neunter Planet, heute als Zwergplanet im Kuipergürtel
+              klassifiziert.
+            </h3>
+            <img src="images/pluto.jpg" alt="Der Zwergplanet Pluto" />
+            <p>
+              Pluto umkreist die Sonne am fernen Rand unseres Sonnensystems im
+              sogenannten Kuipergürtel. Die eisige Welt besitzt eine dünne
+              Atmosphäre aus Stickstoff und Methan sowie riesige Ebenen aus
+              gefrorenem Stickstoffeis, darunter die markante herzförmige Ebene
+              Tombaugh Regio. Gemeinsam mit seinem größten Mond Charon bildet er
+              fast ein Doppelplanetensystem.
+            </p>
+          </div>
+          <blockquote>
+            Hinweis: Pluto galt seit seiner Entdeckung 1930 als neunter Planet.
+            Im August 2006 stufte ihn die IAU offiziell zum Zwergplaneten herab,
+            da er seine Umlaufbahn nicht von anderen Objekten bereinigt hat.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!-------------------------- Planetenuebersicht ------------------------>
+        <section>
+          <!-- Planetenuebersicht -->
+          <div class="baseline clearfix">
+            <h2>Planeten</h2>
+            <img
+              src="images/Planeten.jpg"
+              alt="Darstellung mehrerer Planeten"
+            />
+            <p>
+              Zu den acht Planeten unseres Sonnensystems gehören Merkur, Venus,
+              Erde, Mars, Jupiter, Saturn, Uranus und Neptun. Sie umkreisen die
+              Sonne auf unterschiedlichen Bahnen und unterscheiden sich stark in
+              Größe, Zusammensetzung und Temperatur.
+            </p>
+          </div>
+          <blockquote>
+            „Wir sind eine Möglichkeit des Kosmos, sich selbst zu erkennen.“
+            <br />– Carl Sagan
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!------------------------------- Mond -------------------------------->
+        <section>
+          <div class="baseline clearfix">
+            <h3>Mond</h3>
+            <img src="images/Mond.jpg" alt="Monde im Sonnensystem" />
+            <p>
+              Monde sind natürliche Satelliten, die Planeten umkreisen. Einige
+              Planeten besitzen viele Monde, etwa Jupiter und Saturn. Der
+              Erdmond beeinflusst unter anderem die Gezeiten auf der Erde.
+            </p>
+          </div>
+          <blockquote>
+            Viele Monde zeigen geologische Aktivität und liefern Hinweise auf
+            die Entstehung des Sonnensystems.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!---------------------------- Asteroiden ------------------------------>
+        <section>
+          <div class="baseline clearfix">
+            <h4>Asteroiden</h4>
+            <img src="images/Asteroid.jpg" alt="Asteroiden im All" />
+            <p>
+              Asteroiden sind kleine, meist felsige Himmelskörper. Viele von
+              ihnen befinden sich im Asteroidengürtel zwischen Mars und Jupiter.
+              Sie gelten als Überreste aus der Frühzeit des Sonnensystems.
+            </p>
+          </div>
+          <blockquote>
+            Asteroiden helfen Forschenden, die frühen Entwicklungsphasen unseres
+            Planetensystems besser zu verstehen.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!------------------------------ Kometen ------------------------------->
+        <section>
+          <div class="baseline clearfix">
+            <h5>Kometen</h5>
+            <img src="images/Komet.jpg" alt="Komet mit Schweif" />
+            <p>
+              Kometen bestehen aus Eis, Staub und Gestein. Nähern sie sich der
+              Sonne, bilden sie durch Erwärmung eine leuchtende Koma und oft
+              einen langen Schweif. Ihre Bahnen sind häufig stark elliptisch.
+            </p>
+          </div>
+          <blockquote>
+            Kometen gelten als mögliche Lieferanten von Wasser und organischen
+            Molekülen auf der jungen Erde.
+          </blockquote>
+          <hr />
+        </section>
+
+        <!---------------------------------------------------------------------->
+        <!------------------- Sonne & interstellarer Raum ---------------------->
+        <section>
+          <div class="baseline clearfix">
+            <h6>Die Sonne und interstellarer Raum</h6>
+            <img src="images/Sonne.jpg" alt="Die Sonne" />
+            <p>
+              Die Sonne ist das Zentrum unseres Sonnensystems und liefert Licht
+              sowie Wärme für alle Planeten. Jenseits des Einflussbereichs der
+              Sonne beginnt der interstellare Raum – der Bereich zwischen den
+              Sternen mit extrem geringer Teilchendichte.
+            </p>
+          </div>
+          <blockquote>
+            Der interstellare Raum verbindet Sternsysteme und ist kein leeres
+            Nichts, sondern enthält Gas, Staub und energiereiche Strahlung.
+          </blockquote>
+        </section>
+      </div>
+    </main>
+
+    <hr />
+
+    <ul class="navi">
+      <!-- Ein ganz normaler Link (braucht keine Klasse) -->
+      <li class="zentriert"><a href="#seitenanfang">Seitenanfang</a></li>
+    </ul>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>

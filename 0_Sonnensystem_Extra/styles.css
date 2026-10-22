@@ -1,0 +1,306 @@
+/* ---------------------------------------------------------------
+   1)
+   Fügen Sie den mini-reset * {} ein und einen body Grundsetup.
+   --------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  color: white;
+  background-color: black;
+  line-height: 1.6;
+}
+/* ------- simple Navigation --------
+.navi {
+  list-style:none;
+  padding: 20px;
+  text-decoration: none; 
+}
+
+.navi a:hover {
+  color: #535322; 
+  background-color:#edf6c7;
+  font-weight: bold;
+}
+
+.navi a {
+  text-decoration: none;
+  color: rgb(239, 241, 194); 
+}
+*/
+
+/* ----- modified Navi -------
+/* Container-Design für den Header */
+.site-header {
+  background: #0f1110; /* Dunkler, stimmiger Hintergrund */
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid rgba(239, 241, 194, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigations-Liste */
+.navi {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: left;
+  align-items: left;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Standard-Link im Button-Look */
+.navi a {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  background: rgba(239, 241, 194, 0.05); /* Ganz dezenter Grundton */
+  color: rgb(239, 241, 194); 
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px; /* Macht die Buttons modern und abgerundet */
+  border: 1px solid rgba(239, 241, 194, 0.2);
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover-Effekt mit deinen Farben */
+.navi a:hover {
+  color: #535322; 
+  background-color: #edf6c7;
+  border-color: #edf6c7;
+  font-weight: bold;
+  transform: translateY(-2px); /* Sanfter Hebe-Effekt */
+  box-shadow: 0 4px 15px rgba(237, 246, 199, 0.25);
+}
+
+/* Optional für die aktuell geöffnete Seite */
+.navi a.active {
+  background-color: #edf6c7;
+  color: #535322;
+  border-color: #edf6c7;
+  font-weight: bold;
+}
+
+/* Der erzwungene Zeilenumbruch für die Flexbox */
+.navi .line-break {
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Zwingt in eine neue Zeile und zentriert */
+.navi .zentriert {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------
+   2)
+   Fügen Sie einen div Container im body ein, der den gesamten Inhalt umschließt.
+   Also direkt nach dem öffnenden <body>
+   und den schließenden div _vor_ dem schließenden </body>.
+
+   Weisen Sie dem div die class="wrapper" zu.
+
+   # css 
+   .wrapper {
+     max-width: 1000px;
+     margin: 0 auto;
+   }
+   --------------------------------------------------------------- */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* ---------------------------------------------------------------
+   3)
+   Formatieren Sie den Inhalt, das Sie ein padding für die Planetenansicht 
+   rundrum einstellen, so das der Inhalt mehr Leerraum "zum Atmen" hat. 
+   Werte zwischen 16px - 40px.
+   --------------------------------------------------------------- */
+
+.baseline {
+  padding: 24px;
+  background-color: black;
+  border-radius: 6px;
+}
+
+
+/* ---------------------------------------------------------------
+   4)
+   Erstellen Sie einen Abstand für jede Planetenbox nach unten.
+
+   Tipp 
+   Wenn man nur einen Wert für margin oder padding braucht:
+
+   margin-bottom: 50px;
+   padding-top: 24px;
+
+   margin-left / padding-right
+   --------------------------------------------------------------- */
+
+.baseline {
+  margin-bottom: 40px;
+}
+
+
+/* ---------------------------------------------------------------
+   5)
+   Fügen Sie für die Headlines einen Google Font ein (Siehe: Website_und_Bausteine/webfonts)
+   --------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #e8f1b2;
+  margin-bottom: 12px;
+}
+
+hr {
+  height: 3px;               /* Bestimmt die Dicke */
+  background-color: hsla(50, 71%, 81%, 0.25); /* 75% opaque, i.e. 25% */
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18pxrem;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p{
+  font-size:auto;
+}
+
+
+/* ---------------------------------------------------------------
+   6)
+   Ersetzen Sie die image float Lösung mit einer flexbox, so das Sie z.B. 2 Boxen
+   nebeneinander haben.
+   --------------------------------------------------------------- */
+
+.baseline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Überschriften behalten die volle Breite oben */
+.baseline h2,
+.baseline h3,
+.baseline h2,
+.baseline h3,
+.baseline h4,
+.baseline h5,
+.baseline h6 {
+  width: 100%;
+}
+
+/* Box 1 (Bild): Pixelwert für die Breite und Höhe auf 100% */
+.baseline img {
+  width: 320px;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Box 2 (Text daneben) */ 
+.baseline p {
+  flex: 1;
+  min-width: 260px;
+  color: #e5e7eb;
+}
+
+
+/* ---------------------------------------------------------------
+   7)
+   Experimentieren Sie mit den gelernten CSS Befehlen.
+   --------------------------------------------------------------- */
+blockquote {
+  font-style: italic;
+  padding: 12px 18px;
+  border-left: 4px solid #e5f5a8;
+  background-color: #1a1a1a;
+  color: #d1d5db;
+  margin: 15px 0 25px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333333;
+  margin: 30px 0;
+}
+
+
+/*---------------------------------------------------------------
+  Stars 
+  --------------------------------------------------------------- */
+
+.stars {
+  position: fixed; /* Fixiert, damit die Sterne beim Scrollen im Hintergrund bleiben */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Wichtig: Man kann durch die Sterne hindurchklicken */
+  z-index: -1; /* Legt die Sterne ganz nach hinten hinter alle Inhalte */
+  
+  /* Erzeugt kleine weiße Punkte als Sternenmuster */
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 90px 40px, #93c5fd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 230px 200px, #60a5fa, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 300px 250px, #ffffff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 350px 350px; /* Wiederholt das Muster über den ganzen Bildschirm */
+  
+  /* Bindet die Blinke-Animation ein */
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+/* Die Animation für das Blinken */
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
