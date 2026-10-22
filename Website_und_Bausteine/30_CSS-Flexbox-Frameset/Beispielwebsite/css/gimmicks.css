@@ -1,0 +1,46 @@
+.vertical-center-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+}
+
+.vertical-center {
+  position: relative;
+}
+.vertical-center > div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px black solid;
+}
+
+.image-scale {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-black {
+  border: 1px black solid;
+}
+.gap-0 {
+  gap: 0px;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.gap-32 {
+  gap: 32px;
+}

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box-light {
+  background-color: #ffffff;
+  padding: 64px 10%;
+}
+.home {
+  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0)
+    url("../images/alex-sanislav-3ioKijQhxxI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.kontakt {
+  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0)
+    url("../images/chris-czermak-7ybKmhDTcz0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.kontakt2 {
+  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0)
+    url("../images/fabio-mangione-fs1B0RX4j1o-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.kontakt3 {
+  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0)
+    url("../images/howard-bouchevereau-i0nW-lPiR6w-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.kontakt4 {
+  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0)
+    url("../images/jorge-zapata-zISkTiXiAxM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.kontakt5 {
+  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0)
+    url("../images/karsten-wurth-9qvZSH_NOQs-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.home .overlay,
+.kontakt .overlay,
+.kontakt2 .overlay,
+.kontakt3 .overlay,
+.kontakt4 .overlay,
+.kontakt5 .overlay {
+  height: 100vh;
+}
+/* Gradient der über den Bildern liegt. */
+.overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

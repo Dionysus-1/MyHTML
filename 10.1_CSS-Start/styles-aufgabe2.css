@@ -37,7 +37,6 @@ nav ul {
 
   /*  nav a: 
     Links sollen weiß und ohne Unterstreichung dargestellt werden */
-
 nav a{
     color:white;
     text-decoration: none;
@@ -110,7 +109,6 @@ footer{
 /*  Bonus: Wer früher fertig ist
     Füge dem main-Element einen maximalen Breite (max-width: 800px) und automatische 
     seitliche Abstände (margin: 0 auto) hinzu, damit der Inhalt zentriert bleibt. */
-
 main{
     max-width: 800px;
     margin: 0 auto;

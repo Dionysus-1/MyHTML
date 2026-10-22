@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* smoothes scrollen beim Sprung zu einem Anchor */
+  scroll-behavior: smooth;
+  /* 
+  Offset um die Höhe der Navigation (64px) zu kompensieren,
+  damit der Inhalt nicht hinter die Navigation scrollt.
+  */
+  scroll-padding-top: 64px;
+}
+body {
+  box-sizing: border-box;
+  background-color: rgb(253, 253, 238);
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.home-image {
+  width: 200px;
+  height: 200px;
+  /*  
+      Bild wird "fließend" eingebunden, 
+      Text umschließt das Bild. 
+  */
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+/* Navigation */
+li a {
+  display: block;
+  text-decoration: none;
+
+  font-size: 24px;
+  padding: 16px 32px;
+}
+
+.navi > li {
+  list-style-type: none;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.relative {
+  position: relative;
+}
+.navi {
+  display: flex;
+  justify-content: start;
+  background-color: rgb(94, 20, 20);
+}
+
+.navi a:link {
+  color: rgb(255, 255, 255);
+  background-color: rgb(94, 20, 20);
+}
+.navi a:visited {
+  color: rgb(236, 236, 236);
+}
+.navi a:hover {
+  color: red;
+  background-color: rgb(255, 255, 255);
+}
+.navi a:active {
+  color: black;
+  background-color: red;
+}
+
+/* Website auf Breite setzen und zentrieren */
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(6px 5px 16px #0000003f);
+}
+
+main {
+  padding: 0 32px;
+}
+/* Inhalte */
+
+h1,
+h2 {
+  font-size: 48px;
+}
+
+h2 {
+  padding-top: 100px;
+}
+
+.margin-top {
+  padding-top: 60px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* 100vh (hier: 100 % viewport hight) */
+.websitebereich {
+  height: 100vh;
+}
+
+/* Footer */
+footer {
+  height: 150px;
+  padding-top: 50px;
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}

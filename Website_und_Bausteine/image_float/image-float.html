@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>image-float</title>
+  </head>
+  <body>
+    <h1>Headline</h1>
+
+    <section class="clearfix">
+      <p style="border: 3px solid red">
+        <img
+          src="doggo.avif"
+          style="float: left; margin: 0px 16px 0px 0; width: 100px"
+        />
+        <!--  Das Bild ist mit Absicht innerhalb des <p> tags, damit der
+            style float: left; funktioniert. Dadurch "umfließt" der Text
+            das Bild, da das Bild sich "fließend" nach links bewegt. 
+        
+            Das margin setzt oben 0, rechts 16px, unten 16px und 
+            rechts 0px Abstand. -->
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia
+        odio nam iusto cum ad quaerat alias dolorum provident illo? Saepe fugit
+        sint eius doloremque quas accusamus omnis eum recusandae. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Aperiam maiores adipisci
+        voluptate reiciendis obcaecati modi aliquid. Ab itaque ipsam aperiam
+        sunt cupiditate.
+      </p>
+    </section>
+    <section class="clearfix">
+      <p>
+        <img
+          src="doggo.avif"
+          style="float: left; margin: 0px 16px 16px 0; width: 100px"
+        />
+        <!--  Das Bild ist mit Absicht innerhalb des <p> tags, damit der
+            style float: left; funktioniert. Dadurch "umfließt" der Text
+            das Bild, da das Bild sich "fließend" nach links bewegt. 
+        
+            Das margin setzt oben 0, rechts 16px, unten 16px und 
+            rechts 0px Abstand. -->
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia
+        odio nam iusto cum ad quaerat alias dolorum provident illo? Saepe fugit
+        sint eius doloremque quas accusamus omnis eum recusandae.
+      </p>
+    </section>
+  </body>
+</html>

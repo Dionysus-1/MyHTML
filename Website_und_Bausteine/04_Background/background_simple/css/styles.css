@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.background-image {
+  background: url("../images/chris-czermak-7ybKmhDTcz0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* ----------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Grundlayout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 16px 24px;
+}
+
+h1 {
+  font-size: 26px;
+  /* Kein margin nötig: der * -Reset hat es bereits auf 0 gesetzt
+     und header hat padding, das den Abstand übernimmt. */
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* 3. Sektionen */
+section {
+  background-color: #ffffff;
+  border: 2px solid #2c3e50;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  border-bottom: 3px solid #e67e22;
+  padding-bottom: 6px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* 4. Infobox */
+.infobox {
+  border: 2px solid #2980b9;
+  padding: 16px;
+  margin-top: 12px;
+  background-color: #eaf3fb;
+  border-radius: 4px;
+}
+
+.infobox p {
+  margin-bottom: 0;
+  /* Ohne diese Regel würde das letzte p in der Box
+     noch 12px Abstand nach unten erzeugen –
+     das sähe innerhalb der Box unschön aus. */
+}
+
+/* 5. Footer */
+footer {
+  background-color: #2c3e50;
+  color: #aaaaaa;
+  padding: 12px 24px;
+  margin-top: 0;
+  font-size: 13px;
+}

@@ -1,0 +1,16 @@
+@import url(normalize.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    normalize.css
+
+    Diese Datei ist ein Erweiterter "Reset" und _normalisiert_
+    die Darstellung von HTML-Seiten in unterschiedlichen Browsern.
+
+    Wird in der Regel in jeder website am Start mit eingebunden.
+
+    */

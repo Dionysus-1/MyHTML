@@ -1,0 +1,69 @@
+<!-- 
+    Aufgabe: 
+
+    <ul><li><a>
+
+    Die Links haben eine Reihenfolge:
+    Link → Visited → Hover → Active (LVHA-Regel).
+
+    https://www.mediaevent.de/css/pseudo-klasse-zustand.html
+    
+
+    Erstellen Sie eine Liste <ul> mit drei Unterpunkten <li>. Innerhalb
+    jedes Unterpunkts bitte einen Link <a>. 
+
+    Links wie folgt:
+
+    < a href="Ziel" > Bezeichnung des Links </ a >
+
+    Fügen Sie außerdem den <style> Block passend in ihr html Dokument ein
+    um die Möglichkeiten für Links zu modifizieren.
+
+-->
+
+<!--
+
+    link-colors.html
+
+    links.html
+
+    https://www.google.com
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="ziel">Der Link zum Ziel</a>
+  </body>
+</html>
