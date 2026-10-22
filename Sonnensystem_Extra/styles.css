@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: Arial, Verdana, sans-serif;
+  font-family: Arial;
   color: white;
   background-color: black;
   line-height: 1.6;
@@ -43,8 +43,8 @@ body {
    rundrum einstellen, so das der Inhalt mehr Leerraum "zum Atmen" hat. 
    Werte zwischen 16px - 40px.
    --------------------------------------------------------------- */
-.planet,
-.section {
+
+.baseline {
   padding: 24px;
   background-color: #111111;
   border-radius: 6px;
@@ -63,8 +63,8 @@ body {
 
    margin-left / padding-right
    --------------------------------------------------------------- */
-.planet,
-.section {
+
+.baseline {
   margin-bottom: 40px;
 }
 
@@ -113,8 +113,8 @@ h6 {
    Ersetzen Sie die image float Lösung mit einer flexbox, so das Sie z.B. 2 Boxen
    nebeneinander haben.
    --------------------------------------------------------------- */
-.planet,
-.section {
+
+.baseline {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -122,19 +122,18 @@ h6 {
 }
 
 /* Überschriften behalten die volle Breite oben */
-.planet h2,
-.planet h3,
-.section h2,
-.section h3,
-.section h4,
-.section h5,
-.section h6 {
+.baseline h2,
+.baseline h3,
+.baseline h2,
+.baseline h3,
+.baseline h4,
+.baseline h5,
+.baseline h6 {
   width: 100%;
 }
 
 /* Box 1 (Bild): Pixelwert für die Breite und Höhe auf 100% */
-.planet img,
-.section img {
+.baseline img {
   width: 320px;
   height: 100%;
   max-width: 100%;
@@ -143,9 +142,8 @@ h6 {
   border-radius: 4px;
 }
 
-/* Box 2 (Text daneben) */
-.planet p,
-.section p {
+/* Box 2 (Text daneben) */ 
+.baseline p {
   flex: 1;
   min-width: 260px;
   color: #e5e7eb;
