@@ -59,7 +59,7 @@ body {
   display: inline-block;
   padding: 0.55rem 1.1rem;
   background: rgba(239, 241, 194, 0.05); /* Ganz dezenter Grundton */
-  color: rgb(239, 241, 194); 
+  color: rgb(239, 241, 194);
   text-decoration: none;
   font-family: sans-serif;
   font-size: 0.9rem;
@@ -71,7 +71,7 @@ body {
 
 /* Hover-Effekt mit deinen Farben */
 .navi a:hover {
-  color: #535322; 
+  color: #535322;
   background-color: #edf6c7;
   border-color: #edf6c7;
   font-weight: bold;
@@ -98,8 +98,8 @@ body {
 
 /* Zwingt in eine neue Zeile und zentriert */
 .navi .zentriert {
-    flex-basis: 100%;
-    text-align: center;
+  flex-basis: 100%;
+  text-align: center;
 }
 
 /* ---------------------------------------------------------------
@@ -122,7 +122,6 @@ body {
   padding: 20px;
 }
 
-
 /* ---------------------------------------------------------------
    3)
    Formatieren Sie den Inhalt, das Sie ein padding für die Planetenansicht 
@@ -135,7 +134,6 @@ body {
   background-color: black;
   border-radius: 6px;
 }
-
 
 /* ---------------------------------------------------------------
    4)
@@ -154,19 +152,23 @@ body {
   margin-bottom: 40px;
 }
 
-
 /* ---------------------------------------------------------------
    5)
    Fügen Sie für die Headlines einen Google Font ein (Siehe: Website_und_Bausteine/webfonts)
    --------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   color: #e8f1b2;
   margin-bottom: 12px;
 }
 
 hr {
-  height: 3px;               /* Bestimmt die Dicke */
+  height: 3px; /* Bestimmt die Dicke */
   background-color: hsla(50, 71%, 81%, 0.25); /* 75% opaque, i.e. 25% */
   margin: 40px 0;
 }
@@ -197,10 +199,9 @@ h6 {
   font-size: 14px;
 }
 
-p{
-  font-size:auto;
+p {
+  font-size: auto;
 }
-
 
 /* ---------------------------------------------------------------
    6)
@@ -236,11 +237,29 @@ p{
   border-radius: 4px;
 }
 
-/* Box 2 (Text daneben) */ 
+/* Box 2 (Text daneben) */
 .baseline p {
   flex: 1;
   min-width: 260px;
   color: #e5e7eb;
+}
+
+.planets {
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  height:auto;
+
+  /* Blendet reines Schwarz aus und lässt den Hintergrund durchscheinen: */
+  mix-blend-mode: screen; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 
@@ -254,6 +273,7 @@ blockquote {
   border-left: 4px solid #e5f5a8;
   background-color: #1a1a1a;
   color: #d1d5db;
+
   margin: 15px 0 25px 0;
 }
 
@@ -262,7 +282,6 @@ hr {
   border-top: 1px solid #333333;
   margin: 30px 0;
 }
-
 
 /*---------------------------------------------------------------
   Stars 
@@ -276,18 +295,18 @@ hr {
   height: 100%;
   pointer-events: none; /* Wichtig: Man kann durch die Sterne hindurchklicken */
   z-index: -1; /* Legt die Sterne ganz nach hinten hinter alle Inhalte */
-  
+
   /* Erzeugt kleine weiße Punkte als Sternenmuster */
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 90px 40px, #93c5fd, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 160px 120px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(1.5px 1.5px at 230px 200px, #60a5fa, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 300px 250px, #ffffff, rgba(0,0,0,0));
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 90px 40px, #93c5fd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 160px 120px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 230px 200px, #60a5fa, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 300px 250px, #ffffff, rgba(0, 0, 0, 0));
   background-repeat: repeat;
   background-size: 350px 350px; /* Wiederholt das Muster über den ganzen Bildschirm */
-  
+
   /* Bindet die Blinke-Animation ein */
   animation: twinkle 3s ease-in-out infinite alternate;
 }
