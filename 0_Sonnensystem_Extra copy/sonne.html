@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="stars"></div>
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    
+    <!--
+    <!-- 3. Das Skript, das die header.html fehlerfrei einfügt 
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script> -->
+
+      <body>
+    <header class="site-header">
+      <nav class="main-nav">
+        <ul class="navi">
+          <li><a href="index_V2.html">Sonnensystem</a></li>
+          <li><a href="erde.html">Erde</a></li>
+          <li><a href="merkur.html">Merkur</a></li>
+          <li><a href="venus.html">Venus</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="saturn.html">Saturn</a></li>
+          <li><a href="uranus.html">Uranus</a></li>
+          <li><a href="neptun.html">Neptun</a></li>
+          <li><a href="pluto.html">Pluto</a></li>
+          <li><a href="sonne.html">Sonne</a></li>
+          <li><a href="mond.html">Mond</a></li>
+          <li class="line-break"></li>
+          <li><a href="komet.html">Kometen</a></li>
+          <li><a href="asteroid.html">Asteroiden</a></li>
+          <li><a href="milchstrasse.html">Milchstrasse</a></li>
+          <li><a href="universum.html">Universum</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!--______________________   main ______________________-->
+    <main>
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+        <hr />
+
+        <!---------------------------------------------------------------------->
+        <!-------------------------------- Sonne ------------------------------->
+        <section>
+          <!-- Sonne -->
+          <div class="baseline clearfix">
+            <h2>Sonne</h2>
+            <h3>
+              Das massereiche Zentrum und der einzige Stern unseres
+              Planetensystems.
+            </h3>
+            <img src="images/sonne.jpg" alt="Die glühende Sonne" />
+            <p>
+              Die Sonne ist das Herzstück unseres Planetensystems und macht über
+              99 % der gesamten Masse des Sonnensystems aus. Durch Kernfusion
+              wandelt sie in ihrem Inneren pro Sekunde Millionen Tonnen
+              Wasserstoff in Helium um und erzeugt dadurch das lebensnotwendige
+              Licht und die Wärme für alle Planeten.
+            </p>
+          </div>
+          <blockquote>
+            Die Sonne ist etwa 1,4 Millionen Kilometer groß – die Erde würde
+            mehr als eine Million Mal in sie hineinpassen.
+          </blockquote>
+          <hr />
+        </section>
+      </div>
+    </main>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>

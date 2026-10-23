@@ -1,0 +1,3 @@
+Werkzeug: integriertes Imagegen
+
+Verwendete Prompt-Vorgaben: Hintergrund entfernen; Himmelskörper auf echtem transparentem Alpha freistellen; Farben, Oberflächen, Beleuchtung, dunkle Halbkugeln und Umrisse möglichst erhalten. Saturn/Uranus: Ringe erhalten. Komet: Kern, Koma und weichen Schweif erhalten. Neptun: Raumsonde entfernen. Collagen: Himmelskörper und Beschriftungen erhalten. Milchstraße/Universum: Sterne und leuchtende Strukturen erhalten, dunklen Himmel transparent machen. PNG-Ausgabe ohne neue Objekte.

@@ -1,0 +1,7 @@
+DAS SONNENSYSTEM – Version mit transparenten PNGs
+
+index.html im Browser öffnen. Alle HTML-Dateien, styles.css und script.js bleiben zusammen; die PNGs liegen im Unterordner images. Kein Server nötig.
+
+Die 18 Bilder wurden mit dem eingebauten Imagegen-Werkzeug bearbeitet. KI-gestützte Freistellung kann Details verändern; die Bilder sind illustrative Website-Assets und keine unveränderten wissenschaftlichen Originalaufnahmen.
+
+Bei Neptun wurde die Raumsonde entfernt. Bei Milchstraße und Universum wurden die leuchtenden Strukturen erhalten und dunkler Himmel transparent gemacht. Zitate und Sachquellen stehen auf den jeweiligen Seiten.

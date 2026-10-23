@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="stars"></div>
+    
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    <!-- 3. Das Skript, das die header.html fehlerfrei einfügt -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!--______________________   main ______________________-->
+    <main>
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+        <hr />
+
+        <!--*************************** Venus ********************************-->
+        <section>
+          <!-- Venus -->
+          <div class="baseline clearfix">
+            <h2>Venus</h2>
+            <h3>
+              Die Venus ist neben Merkur der einzige Planet im Sonnensystem, der
+              keinen Mond hat.
+            </h3>
+            <img src="images/venus.jpg" alt="Der Planet Venus" />
+            <p>
+              Obwohl Venus weiter von der Sonne entfernt ist als Merkur, ist sie
+              der heißeste Planet im System. Schuld daran ist eine extrem dichte
+              Kohlendioxid-Atmosphäre mit Schwefelsäurewolken, die einen
+              extremen Treibhauseffekt erzeugt und die Oberfläche auf rund 470
+              °C bei ca. 93 Bar Bodendruck aufheizt. Wegen ihrer enormen
+              Helligkeit wird sie oft als Morgen- oder Abendstern bezeichnet.
+            </p>
+          </div>
+          <blockquote>
+            Die Venus rotiert rückwärts (im Uhrzeigersinn) und ein Tag auf ihr
+            dauert länger als ihr gesamtes Jahr.
+          </blockquote>
+          <hr />
+        </section>
+      </div>
+    </main>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonnensystemLösung</title>
+
+    <!-- Aufgabe 5: Google Font für die Headlines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="stars"></div>
+    <!--______________________ header ______________________-->
+    <!-- Header Platzhalter-->
+    <div id="header-placeholder"></div>
+    <!-- 3. Das Skript, das die header.html fehlerfrei einfügt -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!--______________________   main ______________________-->
+    <main>
+
+      <!-- Aufgabe 2: Start wrapper direkt nach <body> -->
+      <div class="wrapper">
+      <hr />
+
+
+        <!---------------------------------------------------------------------->
+        <!------------------------------ Kometen ------------------------------->
+        <section>
+          <div class="baseline clearfix">
+            <h5>Kometen</h5>
+            <img src="images/Komet.jpg" alt="Komet mit Schweif" />
+            <p>
+              Kometen bestehen aus Eis, Staub und Gestein. Nähern sie sich der Sonne,
+              bilden sie durch Erwärmung eine leuchtende Koma und oft einen langen
+              Schweif. Ihre Bahnen sind häufig stark elliptisch.
+            </p>
+          </div>
+          <blockquote>
+            Kometen gelten als mögliche Lieferanten von Wasser und organischen
+            Molekülen auf der jungen Erde.
+          </blockquote>
+          <hr />
+        </section>
+
+      </div>
+    </main>
+
+    <!--______________________ footer ______________________-->
+  </body>
+</html>
