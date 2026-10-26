@@ -21,3 +21,30 @@
     Tipp: div p trifft alle Absätze in div — auch die, die in der verschachtelten section stecken. Beobachte, welche Regel bei den Absätzen in <div><section><p> greift!
 
 */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:  1.4;
+    color:#000;
+}
+
+div > p {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+div p {
+    background-color: #eaf3fb;
+    padding: 6px 10px;
+}
+
+section > p{
+    color:#888
+}
+
+div {
+    border: 2px solid;
+    border-color: #2980b9;
+    margin-bottom: 14px;
+    border-radius: 4px;
+}

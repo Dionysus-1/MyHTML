@@ -36,3 +36,88 @@
     
 
 */
+/* Navigation */
+nav {
+  background-color: #2c3e50;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+nav > a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin-right: 18px;
+  border-color:#aaa;
+  border-style: solid;
+  border-width: 1px;
+  padding: px;
+  
+}
+
+nav {
+  display: flex;             /* Macht den Container flexibel */
+  width: 100%;               /* Nutzt die volle verfügbare Breite */
+  gap: 10px;                 /* Optional: Kleiner Abstand zwischen den Buttons */
+}
+
+nav a {
+  flex: 1;                   /* Teilt den gesamten Platz gleichmäßig auf alle 3 auf */
+  text-align: center;        /* Zentriert den Text im Button */
+  padding: 12px 0;           /* Innenabstand oben/unten */
+  text-decoration: none;     /* Entfernt die typische Link-Unterstreichung */
+  
+  /* Button-Styling */
+  background-color: #2b394a; /* Hintergrundfarbe des Buttons */
+  color: #ffffff;            /* Textfarbe */
+  border-radius: 6px;        /* Abgerundete Ecken */
+  transition: background-color 0.2s ease;
+}
+
+/* Hover-Effekt, wenn man mit der Maus drüberfährt */
+nav a:hover {
+  background-color: #3d5068;
+}
+
+/* Hauptbereich (Artikel & Nachfahren) */
+main > article {
+  border: 2px solid #ddd;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+
+main > article > h2 {
+  color: #2c3e50;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+article p {
+  line-height: 1.6;
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+article a {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Sidebar (Aside & Nachfahren) */
+aside {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 14px;
+  border-radius: 4px;
+}
+
+aside h2 {
+  color: #888;
+  font-size: 15px;
+}
+
+aside a {
+  color: #aaa;
+  font-weight: normal;
+}

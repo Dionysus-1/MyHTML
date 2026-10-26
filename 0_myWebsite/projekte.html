@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Beispielprojekte und technische Dokumentationen."
+    />
+    <title>Projekte | Dennis Lucht – IT-Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Zur Startseite"
+          ><span class="brand-mark">&lt;/&gt;</span>
+          <span>Dennis<span class="accent"> Lucht</span></span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Menü öffnen"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+          <a href="index.html">Startseite</a
+          ><a href="projekte.html" aria-current="page">Projekte</a
+          ><a href="werdegang.html">Werdegang</a
+          ><a href="ueber-mich.html">Über mich</a
+          ><a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-intro container reveal">
+        <div class="eyebrow">01 / PORTFOLIO</div>
+        <h1>Projekte<span class="accent">.</span></h1>
+        <p class="lead">
+          Praxisnah. Durchdacht. Dokumentiert. Hier werden später deine eigenen
+          IT-Projekte vorgestellt.
+        </p>
+      </section>
+      <section class="section section-tight">
+        <div class="container">
+          <div class="filter-bar" aria-label="Projekte filtern">
+            <button
+              class="filter-btn active"
+              data-project-filter="all"
+              aria-pressed="true"
+            >
+              Alle</button
+            ><button
+              class="filter-btn"
+              data-project-filter="infra"
+              aria-pressed="false"
+            >
+              Infrastruktur</button
+            ><button
+              class="filter-btn"
+              data-project-filter="network"
+              aria-pressed="false"
+            >
+              Netzwerke</button
+            ><button
+              class="filter-btn"
+              data-project-filter="code"
+              aria-pressed="false"
+            >
+              Programmierung
+            </button>
+          </div>
+          <div class="project-grid" id="projects">
+            <div data-project-category="infra">
+              <article class="project-card reveal">
+                <a
+                  class="project-art project-a"
+                  href="projekt-vorlage.html"
+                  aria-label="Beispielprojekt Homelab & Virtualisierung öffnen"
+                  ><span class="art-grid"></span><span class="art-orbit"></span
+                  ><span class="art-number">01 / PROJECT</span
+                  ><span class="art-symbol">▦</span></a
+                >
+                <div class="project-content">
+                  <div class="eyebrow">BEISPIELPROJEKT / PLATZHALTER</div>
+                  <h3>Homelab & Virtualisierung</h3>
+                  <p>
+                    Beispielprojekt: Aufbau einer Testumgebung mit virtuellen
+                    Maschinen, Netzwerken und Diensten.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Linux</span
+                    ><span class="tag">Virtualisierung</span
+                    ><span class="tag">Netzwerk</span>
+                  </div>
+                  <a class="text-link" href="projekt-vorlage.html"
+                    >Projekt ansehen <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+            </div>
+            <div data-project-category="network">
+              <article class="project-card reveal">
+                <a
+                  class="project-art project-b"
+                  href="projekt-vorlage.html"
+                  aria-label="Beispielprojekt Netzwerksegmentierung öffnen"
+                  ><span class="art-grid"></span><span class="art-orbit"></span
+                  ><span class="art-number">02 / PROJECT</span
+                  ><span class="art-symbol">⌘</span></a
+                >
+                <div class="project-content">
+                  <div class="eyebrow">BEISPIELPROJEKT / PLATZHALTER</div>
+                  <h3>Netzwerksegmentierung</h3>
+                  <p>
+                    Beispielprojekt: Planung eines segmentierten Netzwerks mit
+                    VLANs und Firewall-Regeln.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">VLAN</span
+                    ><span class="tag">Firewall</span
+                    ><span class="tag">Routing</span>
+                  </div>
+                  <a class="text-link" href="projekt-vorlage.html"
+                    >Projekt ansehen <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+            </div>
+            <div data-project-category="code">
+              <article class="project-card reveal">
+                <a
+                  class="project-art project-c"
+                  href="projekt-vorlage.html"
+                  aria-label="Beispielprojekt Automatisierung mit Python öffnen"
+                  ><span class="art-grid"></span><span class="art-orbit"></span
+                  ><span class="art-number">03 / PROJECT</span
+                  ><span class="art-symbol">{ } </span></a
+                >
+                <div class="project-content">
+                  <div class="eyebrow">BEISPIELPROJEKT / PLATZHALTER</div>
+                  <h3>Automatisierung mit Python</h3>
+                  <p>
+                    Beispielprojekt: Ein Skript zur Vereinfachung
+                    wiederkehrender Administrationsaufgaben.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">Python</span
+                    ><span class="tag">Scripting</span
+                    ><span class="tag">Automation</span>
+                  </div>
+                  <a class="text-link" href="projekt-vorlage.html"
+                    >Projekt ansehen <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+          <p class="note">
+            Hinweis: Alle Projekte sind Musterinhalte. Titel, Texte, Tags und
+            Visualisierungen direkt in <code>projekte.html</code> ersetzen.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year"></span> Dennis Lucht
+          <span class="muted">· Portfolio</span></span
+        >
+        <div>
+          <a href="kontakt.html">Kontakt</a
+          ><a href="impressum.html">Impressum</a
+          ><a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

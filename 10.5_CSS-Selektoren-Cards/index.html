@@ -1,7 +1,7 @@
 <!-- 
     Die Aufgabenstellung befindet sich in der css/styles.css.
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,26 @@
     <title>Card</title>
   </head>
   <body>
-    <div class="card"></div>
+    <div class="card">
+      <h2>Adresskartei</h2>
+      <div>
+        <img src="img/img_avatar.png" alt="Avatar" />
+        <h3>Name</h3>
+        <p>Nr.1</p>
+      </div>
+      <p class="adresse">Adresse</p>
+      <p class="telefon">Telefon</p>
+      <p class="email">E-Mail</p>
+    </div>
+<nav>
+  <input type="radio" id="btn1" name="nav-group" checked>
+  <label for="btn1">Startseite</label>
+
+  <input type="radio" id="btn2" name="nav-group">
+  <label for="btn2">Themen</label>
+
+  <input type="radio" id="btn3" name="nav-group">
+  <label for="btn3">Kontakt</label>
+</nav>
   </body>
 </html>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Werdegang, Qualifikationen und technische Kompetenzen."
+    />
+    <title>Werdegang | DEIN NAME – IT-Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Zur Startseite"
+          ><span class="brand-mark">&lt;/&gt;</span>
+          <span>Dennis <span class="accent">Lucht</span></span></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Menü öffnen"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+          <a href="index.html">Startseite</a><a href="projekte.html">Projekte</a
+          ><a href="werdegang.html" aria-current="page">Werdegang</a
+          ><a href="ueber-mich.html">Über mich</a
+          ><a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-intro container reveal">
+        <div class="eyebrow">02 / ENTWICKLUNG</div>
+        <h1>Mein <span class="accent">Werdegang.</span></h1>
+        <p class="lead">
+          Stationen, Erfahrungen und Fähigkeiten auf einen Blick. Alle Angaben
+          sind zunächst Platzhalter.
+        </p>
+      </section>
+      <section class="section section-tight">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">01 / TIMELINE</div>
+              <h2>Mein bisheriger Weg</h2>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">[JAHR / ZEITRAUM]</div>
+              <div>
+                <h3>[Aktuelle Station]</h3>
+                <p>
+                  [ANPASSEN: Beschreibe hier deine Schule, Ausbildung, Tätigkeit
+                  oder ein relevantes Projekt.]
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">[JAHR / ZEITRAUM]</div>
+              <div>
+                <h3>[Vorherige Station]</h3>
+                <p>
+                  [ANPASSEN: Beschreibe hier deine Schule, Ausbildung, Tätigkeit
+                  oder ein relevantes Projekt.]
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">[JAHR / ZEITRAUM]</div>
+              <div>
+                <h3>[Schulischer Werdegang]</h3>
+                <p>
+                  [ANPASSEN: Beschreibe hier deine Schule, Ausbildung, Tätigkeit
+                  oder ein relevantes Projekt.]
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-tinted">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">02 / KNOW-HOW</div>
+              <h2>Technische <span class="accent">Kompetenzen.</span></h2>
+              <p>
+                Beispielhafte Selbsteinschätzungen. Passe die Werte an deine
+                tatsächlichen Kenntnisse an.
+              </p>
+            </div>
+          </div>
+          <div class="filter-bar" aria-label="Kompetenzen filtern">
+            <button
+              class="filter-btn active"
+              data-skill-filter="all"
+              aria-pressed="true"
+            >
+              Alle</button
+            ><button
+              class="filter-btn"
+              data-skill-filter="code"
+              aria-pressed="false"
+            >
+              Programmierung & Web</button
+            ><button
+              class="filter-btn"
+              data-skill-filter="systems"
+              aria-pressed="false"
+            >
+              Systeme & Netzwerke</button
+            ><button
+              class="filter-btn"
+              data-skill-filter="tools"
+              aria-pressed="false"
+            >
+              Tools & Office
+            </button>
+          </div>
+          <div class="skill-panel skill-grid" id="skills">
+            <div class="skill" data-category="code">
+              <div class="skill-label">
+                <span>HTML / CSS</span
+                ><span>75% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="HTML / CSS – Platzhalter"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 75%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="code">
+              <div class="skill-label">
+                <span>Python</span><span>60% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Python – Platzhalter"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 60%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="code">
+              <div class="skill-label">
+                <span>Java</span><span>40% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Java – Platzhalter"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 40%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="code">
+              <div class="skill-label">
+                <span>JavaScript</span
+                ><span>45% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="JavaScript – Platzhalter"
+                aria-valuenow="45"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 45%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="systems">
+              <div class="skill-label">
+                <span>Windows</span><span>75% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Windows – Platzhalter"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 75%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="systems">
+              <div class="skill-label">
+                <span>Linux</span><span>65% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Linux – Platzhalter"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 65%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="systems">
+              <div class="skill-label">
+                <span>Netzwerke</span
+                ><span>70% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Netzwerke – Platzhalter"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 70%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="systems">
+              <div class="skill-label">
+                <span>Virtualisierung</span
+                ><span>55% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Virtualisierung – Platzhalter"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 55%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="tools">
+              <div class="skill-label">
+                <span>MS Office</span
+                ><span>80% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="MS Office – Platzhalter"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 80%"></span>
+              </div>
+            </div>
+            <div class="skill" data-category="tools">
+              <div class="skill-label">
+                <span>Dokumentation</span
+                ><span>65% <small>Beispielwert</small></span>
+              </div>
+              <div
+                class="skill-track"
+                role="progressbar"
+                aria-label="Dokumentation – Platzhalter"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <span style="--level: 65%"></span>
+              </div>
+            </div>
+          </div>
+          <p class="note">
+            Die Prozentwerte sind subjektive Beispielwerte, keine Zertifikate
+            oder objektiven Messungen.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">03 / QUALIFIKATIONEN</div>
+              <h2>Zertifikate & Abschlüsse</h2>
+            </div>
+          </div>
+          <div class="info-grid">
+            <article class="info-card">
+              <span class="icon-frame">◇</span>
+              <h3>[Abschluss / Zertifikat]</h3>
+              <p>[Institution, Jahr und kurze Beschreibung ergänzen.]</p>
+            </article>
+            <article class="info-card">
+              <span class="icon-frame">⌘</span>
+              <h3>[Kurs / Weiterbildung]</h3>
+              <p>[Relevante Weiterbildung oder Schulung ergänzen.]</p>
+            </article>
+          </div>
+          <div class="download-panel">
+            <div>
+              <h3>Lebenslauf als PDF</h3>
+              <p>
+                Lege deine Datei unter
+                <code>assets/documents/lebenslauf.pdf</code> ab.
+              </p>
+            </div>
+            <a class="btn btn-outline" href="assets/documents/README.txt"
+              >Hinweis zur PDF-Datei ↗</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year"></span> Dennis Lucht
+          <span class="muted">· Portfolio</span></span
+        >
+        <div>
+          <a href="kontakt.html">Kontakt</a
+          ><a href="impressum.html">Impressum</a
+          ><a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
