@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    gap:5px;
+    margin:5px;
+}
+
+.subnavi {
+    border:red solid 2px;
+    width:30%;
+    height:140px;
+}
+
+.right-outer-div {
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    width:70%;
+}
+
+header {
+    border:red solid 2px;
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    border:red solid 2px;
+}
+
+nav {
+    border:black solid 2px;
+    margin: 5px;
+}
+
+section {
+    display:flex;
+    gap:3px;
+    border:green solid 2px;
+    margin: 5px;
+}
+
+article {
+    margin:5px;
+    border:black solid 2px;
+    width:100%;
+}
+
+footer {
+    border:red solid 2px;
+    text-align: center;
+    padding:30px;
+}

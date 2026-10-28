@@ -1,0 +1,51 @@
+/* CSS-Kombinatoren */
+
+.card h2 {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+/* Mehrere Optionen das Bild anzusprechen 
+.card div img 
+.card > div > img
+.card div > img
+.card > div img
+oder 
+.card img
+*/
+
+.card div img {
+  width: 100%;
+  height: auto;
+}
+/* oder .card h3 */
+.card div h3 {
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.card div p {
+  font-size: 12px;
+  background-color: red;
+}
+
+/* 
+    Hier ist _zwingend_ der Kindselektor > zu benutzen,
+    da wir mit .card p {} auch den p (Nr. 1) ansprechen würden
+*/
+.card > p {
+  margin: 16px;
+  font-size: 10px;
+}
+/* 
+    Die Beiden p tags kann man hier auch zusammen mit .card p {...}
+    ansprechen.
+*/
+.card h2,
+.card h3,
+.card div p,
+.card > p {
+  padding-left: 8px;
+  padding-right: 8px;
+}

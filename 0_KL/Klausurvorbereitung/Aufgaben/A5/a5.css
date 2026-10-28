@@ -1,0 +1,33 @@
+/* 
+    position für den Container alles außer static möglich
+*/
+.container {
+      position: relative;
+      height: 200px;
+      margin: 100px 20px 20px;
+      border: 1px solid black;
+}
+
+    .icon,
+    .image {
+      width: 80px;
+      height: 80px;
+      border: 1px dotted black;
+    }
+/* 
+    position: fixed, da am body/Browserfenster außgerichtet.
+*/
+.icon {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+/*
+    position: absolute, da offensichtlich am obercontainer 
+    an der unteren linken Kante ausgerichtet.
+*/
+.image {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}

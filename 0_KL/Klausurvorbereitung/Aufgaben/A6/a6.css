@@ -1,0 +1,24 @@
+.flex {
+    display:flex;
+    border:black solid 2px;
+    padding:5px;
+}
+
+article {
+    border:black solid 2px;
+    padding:5px;
+    height:100px;
+}
+.article1{
+    width:20%;
+}
+.article2{
+    width:30%;
+}
+.article3{
+    width:50%;
+}
+
+.p1 {
+    margin-bottom: 2px;
+}

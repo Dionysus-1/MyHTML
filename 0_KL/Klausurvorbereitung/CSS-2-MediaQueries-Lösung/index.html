@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klausurvorbereitung - MediaQueries</title>
+    <style>
+      /* Aufgabe 6 */
+      .flex {
+        display: flex;
+        flex-direction: row; /* optional */
+      }
+      .article1 {
+        width: 20%;
+      }
+      .article2 {
+        width: 30%;
+      }
+      .article3 {
+        width: 50%;
+      }
+
+      /* Aufgabe: Media Queries */
+
+      .flex {
+        display: flex;
+        flex-direction: row; /* optional */
+      }
+      .article1 {
+        width: 20%;
+      }
+      .article2 {
+        width: 30%;
+      }
+      .article3 {
+        width: 50%;
+      }
+
+      /* CSS, das ausgeführt wird, wenn die Breite des Screens
+      unter 600px schrumpft. */
+      @media only screen and (max-width: 600px) {
+        .flex {
+          display: flex;
+          flex-direction: column;
+        }
+        .article1,
+        .article2,
+        .article3 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flex">
+      <article class="article1">Artikel 1</article>
+      <article class="article2">Artikel 1</article>
+      <article class="article3">Artikel 1</article>
+    </section>
+  </body>
+</html>

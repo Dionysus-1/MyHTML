@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Support für bessere Sichtbarkeit --- */
+.flexbox {
+  border: 3px solid black;
+}
+article[class*="container"] {
+  border: 1px solid red;
+}
+/* --- Navigation --- */
+nav li {
+  display: inline-block;
+  padding: 8px 24px;
+}
+/* DinA4 Hochkant, damit der Aside besser zu sehen ist. */
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Flexbox --- */
+.flexbox {
+  display: flex;
+}
+.container-100 {
+  width: 100%;
+}
+.container-50 {
+  width: 50%;
+}
+.container-33 {
+  width: 33.3334%;
+}
+
+/* --- Aside --- */
+.side-navigation {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* --- Footer --- */
+.fuss {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 64px;
+}

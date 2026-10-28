@@ -1,0 +1,9 @@
+2. Box Modell 
+
+a) 
+padding: 24px 16px 36px 8px;
+
+b)
+margin: 16px 12px;
+
+
