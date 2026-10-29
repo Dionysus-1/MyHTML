@@ -46,10 +46,10 @@ body {
 }
 
 .card {
-  max-width: 400px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding-bottom: 16px;
+    max-width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding-bottom: 16px;
 }
 .card h2 {
   font-size: 36px;
@@ -82,4 +82,19 @@ body {
 .card .email {
   color: #343434;
   padding-left: 8px;
+}
+
+/* Aufgabe*/
+.card {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }

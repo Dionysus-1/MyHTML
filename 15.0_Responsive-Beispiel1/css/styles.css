@@ -3,7 +3,7 @@
 */
 
 .hintergrundfarbe {
-  background-color: blue;
+  background-color: rgb(156, 156, 214);
 } /* Definition 1 */
 
 @media (/*bedingung, z.b.: */ min-width: 600px) {
@@ -11,7 +11,7 @@
         der @media query erfüllt ist. */
 
   .hintergrundfarbe {
-    background-color: red;
+    background-color: rgb(231, 161, 161);
   } /* Definition 2 */
 }
 /*
@@ -20,6 +20,8 @@
     Da die .klasse in der Reihenfolge (Definition 2) später in der Datei
     erfolgt, überschreibt sie die erste (Definition 1).
 */
+
+
 
 /*
     --------------------------------------------------------------------
@@ -49,6 +51,94 @@
     
 */
 
-/*CSS, das ausgeführt wird, wenn die Breite des Screens unter 600px schrumpft.*/
-@media only screen and (min-width: 600px) {
+/* 
+    Media Queries - kurze Erklärung
+*/
+
+.hintergrundfarbe {
+  background-color: rgb(156, 156, 214);
+} /* Definition 1 */
+
+@media (/*bedingung, z.b.: */ min-width: 600px) {
+  /*  CSS, das ausgeführt wird, wenn die Bedingung
+        der @media query erfüllt ist. */
+
+  .hintergrundfarbe {
+    background-color: rgb(231, 161, 161);
+  } /* Definition 2 */
+}
+/*
+    Wenn die Browserbreite 600px überschreitet wird die Definition in
+    der media query aktiv.
+    Da die .klasse in der Reihenfolge (Definition 2) später in der Datei
+    erfolgt, überschreibt sie die erste (Definition 1).
+*/
+
+
+
+/*
+    --------------------------------------------------------------------
+*/
+
+/*  Aufgaben
+
+    a)
+    Erstellen Sie in der HTML-Datei einen Obercontainer <section> und drei
+    Untercontainer <article>.
+
+    b)
+    Vergeben Sie dem Obercontainer die Klasse .flexbox und definieren Sie
+    diese ebenfalls in CSS (mit display: flex;). 
+    Vergeben Sie ebenfalls drei Klassen für die Untercontainer (siehe c). 
+
+    c)
+    Die drei Untercontainer <article> sollen nun im desktop Bereich (Breite
+    über 600px) nebeneinander dargestellt und je eine Breite von 50%, 20% 
+    und 30% haben. 
+    Im mobile-Bereich (unter 600px Breite) soll die flexbox vertikal (hochkant)
+    ausgerichtet werden und alle <article> eine Breite von 100% haben.
+
+    d)
+    Die Definition oben, die als Beispiel dient und den Hintergrund wechselt
+    kommentieren Sie bitte aus wenn Sie fertig sind.
+    
+*/
+* {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.sub50 {
+    width: 50%;
+}
+
+.sub20 {
+    width: 20%;
+}
+
+.sub30 {
+    width: 30%;
+}
+
+article {
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+@media (max-width: 599px) {
+    .flexbox {
+        flex-direction: column;
+    }
+
+    .sub50,
+    .sub20,
+    .sub30 {
+        width: 100%;
+    }
 }

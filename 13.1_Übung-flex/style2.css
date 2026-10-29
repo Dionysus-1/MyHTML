@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+.prefix::before {
+  content: "width: ";
+}
+.sufix::after {
+  content: " Box";
+}
+.sonne{
+  max-width:1rem;
+  max-height:1rem;
+  object-fit: contain;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 50px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+h1 {
+  text-align: center;
+}
+.mainbox {
+  border: 2px solid black;
+  padding: 5px; /* Abstand Aussenrahmen nach innnen zu Boxen*/
+  background-color: white;
+}
+.flexbox {
+  display: flex;
+  gap: 5px; /* Abstand innen zwischen den Boxen*/
+  margin-bottom: 5px; /* Abstand nach unten/oben zwischen den Boxen*/
+}
+.box75 {
+  height: 150px;
+  width: 75%;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+}
+.box25 {
+  height: 150px;
+  width: 25%;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+}
+.box33 {
+  height: 150px;
+  width: 33%;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+}
+.box66 {
+  height: 150px;
+  width: 66%;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+}
+.box40 {
+  flex: 40;
+  min-width: 0;
+  height: 150px;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.box40 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+.box60 {
+  flex: 60;
+  min-width: 0;
+  height: 150px;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+}
+
+.box100 {
+  height: 150px;
+  width: 100%;
+  border: 2px solid #555;
+  padding: 15px;
+  background-color: #dbeafe;
+}

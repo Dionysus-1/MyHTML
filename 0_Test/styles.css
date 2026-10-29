@@ -1,54 +1,12 @@
-.highlight {
-    font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-    color: cadetblue;
-}
-p.highlight {
-    font-size: medium;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-    color: rgb(160, 120, 95);
-}
-footer p.red  {
-    color: red;
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v51-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.code-block {
-    background-color: aliceblue;
-    color:blue;
-    font-family: monospace;
-}
-
-.link {
-    background-color:grey;
-    color:white;
-    border: 2px solid black;
-    padding: 2px;
-    text-decoration:none;
-    border-radius: 5px;
-}
-.link:hover {
-    background-color:aquamarine;
-    color:black;
-    border: 1px solid black;
-}
-.image {
-  display: block;
-  max-width: 100%;
-  max-height: auto;
-  width: auto;
-  height: auto;
-}
-
-body{
-    background-color: rgb(43, 43, 43);
-    color:antiquewhite
-}
-
-h2 + p { color:red; }
-
-.dynimg {
-    width: 50vw;
-    height:100%;
+div {
+    font-family: 'Roboto';
 }

@@ -40,3 +40,10 @@
   background-color: transparent;
   text-decoration: none;
 }
+
+/* Aufgabe: Stellen Sie die Navigation so ein, das Sie beim scrollen der Seite
+    am oberen Browserrand kleben bleibt. */
+.navigation {
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,51 @@
+/* Obercontainer */
+.social-media {
+  margin-left: 16px;
+}
+
+/* article innerhalb von social-media */
+.social-media article {
+  display: inline-block; /* article ist standardmäßig ein Block-Element */
+  margin-right: 25px;
+}
+
+/* Bilder innerhalb von social-media */
+.social-media img {
+  display: inline-block; /* eigentlich überflüssig - img ist standardmäßig inline-block */
+  width: 30px;
+  height: 30px;
+}
+
+/* Texte innerhalb von social-media */
+p {
+  display: inline-block; /* <p> ist standardmäßig ein Block-Element */
+  font-size: 16px;
+}
+
+/***************************************/
+
+/* Bilder positionieren */
+.facebook {
+  position: relative;
+  top: 8px;
+}
+
+.instagram {
+  position: relative;
+  top: 8px;
+}
+
+.linkedin {
+  position: relative;
+  top: 8px;
+}
+
+.xing {
+  position: relative;
+  top: 8px;
+}
+
+.youtube {
+  position: relative;
+  top: 8px;
+}

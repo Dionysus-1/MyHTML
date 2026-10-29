@@ -101,7 +101,7 @@
   }
   /* simpler Test */
   .text-container {
-    backg-round-color: blue;
+    background-color: rgb(140, 140, 175);
     font-size: 24px;
   }
   .container-50 {
@@ -110,5 +110,10 @@
   /* Bild wird ausgeblendet */
   .bild-container {
     display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .img {
+    max-width: 300px;
   }
 }
